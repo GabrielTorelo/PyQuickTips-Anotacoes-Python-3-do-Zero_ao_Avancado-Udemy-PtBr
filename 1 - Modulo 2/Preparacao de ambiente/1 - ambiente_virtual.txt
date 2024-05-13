@@ -1,0 +1,15 @@
+Criar um "Ambiente Virtual":
+  python -m venv venv
+
+Ativar o "Ambiente Virtual":
+  .\venv\Scripts\activate
+
+* Caso não seja possível executar o comando acima, deve-se mudar as "Políticas de Execução":
+  1 - Analisar o retorno do comando abaixo:
+    Get-ExecutionPolicy
+      * Se retornar "Restricted":
+        1 - Execute o "PowerShell" como "Administrador".
+        2 - Rode o comando abaixo:
+          Set-ExecutionPolicy AllSigned -Force
+      * Se retornar "Unrestricted" ou "AllSigned":
+        TUDO OK!
