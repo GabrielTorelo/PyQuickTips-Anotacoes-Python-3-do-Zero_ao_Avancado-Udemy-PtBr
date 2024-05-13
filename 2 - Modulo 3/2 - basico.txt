@@ -1,0 +1,39 @@
+Qual a extensão dos arquivos Python?
+  Resposta: A extensão usada é a '.py'.
+  Exemplo: 'aula1.py'
+
+Como é feito um comentário em linha?
+  Resposta: Comentários de linha são feitos usando o '#'.
+  Exemplo:
+    # Isso é apenas um comentário de linha.
+
+Como é feito um comentário multi-linha?
+  Resposta: Comentários multi-linha são feitos usando docstrings (""" ou ''')
+  Exemplo:
+    1 - Usando aspas duplas:
+      """
+        Isso é apenas um comentário multi-linha:
+        Linha 1
+        Linha 2
+        Linha 3
+      """
+    2 - Usando aspas simples:
+      '''
+        Isso é apenas um comentário multi-linha:
+        Linha 1
+        Linha 2
+        Linha 3
+      '''
+
+Como exibir algo no terminal?
+  Resposta: Usando o comando 'print'.
+  Exemplo:
+    * print('Isso será exibido no console')
+
+É possível passar argumentos para o comando 'print'?
+  Resposta: Sim, segue exemplos abaixo
+  Exemplos:
+    * Mudar o separador (sep):
+      print('primeiro', 'segundo', sep='_')
+    * Mudar o que é adicionado ao fim (end):
+      print('primeiro', 'segundo', sep='_', end='*\n')
