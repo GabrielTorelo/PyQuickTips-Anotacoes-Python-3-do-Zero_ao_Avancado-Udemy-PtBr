@@ -1,0 +1,20 @@
+{
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "explorer.confirmDragAndDrop": false,
+  "editor.tabSize": 2,
+  "workbench.startupEditor": "none",
+  "gitlens.views.branches.files.layout": "tree",
+  "editor.formatOnSave": true,
+  "json.schemas": [],
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "code-runner.runInTerminal": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.executorMap": {
+    "python": "clear; python -u"
+  },
+  "code-runner.ignoreSelection": true,
+  "python.defaultInterpreterPath": "python"
+}
