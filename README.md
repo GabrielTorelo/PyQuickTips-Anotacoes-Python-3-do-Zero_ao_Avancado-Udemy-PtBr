@@ -1,0 +1,2 @@
+# PyQuickTips-Anotacoes-Python-3-do-Zero_ao_Avancado-Udemy-PtBr
+Minhas Anotações do Curso de Python 3 do básico ao avançado (com projetos reais) - Udemy-[https://www.udemy.com/course/python-3-do-zero-ao-avancado/] - Python 3, PySide6, Django, Selenium, Regexp, Testes, TDD, POO, Design Patterns GoF, algoritmos e programação, etc... [Código adaptado do curso, vlw Luiz Otávio Miranda e Tales Calogi Malaquias]
