@@ -1,0 +1,28 @@
+* f-strings (f'' ou f""):
+  Conceito: Usadas quando desejamos concatenar 'strings' com outros dados (int, float, bool).
+  Exemplo:
+    1 - Exibir a variável 'msg_anos' que é a junção de uma variável e uma string:
+      anos = 24
+      msg_anos = f"Gabriel possui {anos} anos"
+      print(msg_anos)
+
+** 'Strings' NO Python SÃO MÉTODOS!
+
+* Formatar (.format)
+  Conceito: Usado para formatar 'strings'.
+  Exemplo:
+    1 - Formatar com o índice implícito:
+      a = 'A'
+      b = 1.1
+      msg_AB = 'a={}, b={}'.format(a, b)
+      print(msg_AB)
+    2 - Formatar passando o índice desejado:
+      c = 'C'
+      d = 1.55
+      msg_CD = 'c={1}, d={0:.2f}'.format(d, c)
+      print(msg_CD)
+    3 - Formatar usando parâmetros nomeados:
+      e = 'E'
+      f = 7.96
+      msg_EF = 'e={letra_e}, f={letra_f:.2f}'.format(letra_e=e, letra_f=f)
+      print(msg_EF)
