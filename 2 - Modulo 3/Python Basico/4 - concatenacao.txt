@@ -1,0 +1,11 @@
+Concatenação de strings ('' + '')
+  Conceito: Realiza a junção de duas ou mais strings.
+  Exemplo:
+    'Olá' + ' ' + 'Mundo!'
+
+Repetição de strings ('' * x ou x * '')
+  Conceito: Realiza a repetição de uma string X vezes.
+  Exemplo:
+    'Gabriel ' * 5
+
+
