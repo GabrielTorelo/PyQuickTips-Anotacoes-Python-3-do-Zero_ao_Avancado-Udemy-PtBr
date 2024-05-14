@@ -12,11 +12,11 @@
     * divisao = 10 // 3
 
 * Exponenciação (**):
-  Conceito: Esse operador realiza a exponenciação pelo valor a direita
+  Conceito: Esse operador realiza a exponenciação pelo valor a direita.
   Exemplo:
     * exponenciacao = 2 ** 10
 
 * Modulo (%):
-  Conceito: Retorna o resto da divisão
+  Conceito: Retorna o resto da divisão.
   Exemplo:
     * modulo = 55 % 2
