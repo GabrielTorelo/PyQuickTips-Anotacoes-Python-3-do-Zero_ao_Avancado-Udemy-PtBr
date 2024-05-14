@@ -10,7 +10,7 @@
 
 * Formatar (.format)
   Conceito: Usado para formatar 'strings'.
-  Exemplo:
+  Exemplos:
     1 - Formatar com o índice implícito:
       a = 'A'
       b = 1.1
@@ -26,3 +26,13 @@
       f = 7.96
       msg_EF = 'e={letra_e}, f={letra_f:.2f}'.format(letra_e=e, letra_f=f)
       print(msg_EF)
+
+* Fatiamento de strings
+  Conceito: Usado para pegar pedaços de uma string.
+  Exemplo:
+    1 - Imprimir apenas parte de uma string (o 'capitalize' deixa a 1ª letra em maiúsculo):
+      msg_longa = 'Olá, sou uma mensagem muito longa'
+      print(msg_longa[13:22].capitalize())
+    2 - Verifica o tamanho de uma string:
+      msg_longa = 'Olá, sou uma mensagem muito longa'
+      print(len(msg_longa[13:22]))
