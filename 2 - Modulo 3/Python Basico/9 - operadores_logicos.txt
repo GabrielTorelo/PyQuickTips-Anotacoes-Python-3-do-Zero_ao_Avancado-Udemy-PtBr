@@ -1,0 +1,18 @@
+* E (and):
+  Conceito: Para retornar verdadeiro, todas as condições devem serem verdadeiras
+  Exemplo:
+    1 - Verificar se duas condições são verdadeiras
+      if (10 > 11 and 15 < 13)
+
+* Ou (or):
+  Conceito: Para retornar verdadeiro, alguma das condições deve ser verdadeira
+  Exemplo:
+    1 - Verificar se uma das condições é verdadeira
+      if (10 > 11 or 12 < 13)
+
+* Not (não):
+  Conceito: Usado para inverter expressões
+  Ou seja: Se o retorno da expressão é 'True' ao usar o 'not' irá retornar 'False' e vice-versa
+  Exemplo:
+    1 - Verificar se a condição é falsa
+      if (not(11 > 12))
