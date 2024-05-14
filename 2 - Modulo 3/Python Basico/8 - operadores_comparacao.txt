@@ -1,0 +1,41 @@
+* Maior (>):
+  Conceito: Caso seja maior retorna 'True'
+  Exemplo:
+    eh_maior = 10 > 5
+
+* Maior ou igual (>=):
+  Conceito: Caso seja maior ou igual retorna 'True'
+  Exemplo:
+    eh_maior_igual = 10 >= 5
+
+* Menor (<):
+  Conceito: Caso seja menor retorna 'True'
+  Exemplo:
+    eh_menor = 5 < 10
+
+* Menor ou igual (<=):
+  Conceito: Caso seja menor ou igual retorna 'True'
+  Exemplo:
+    eh_menor_igual = 5 <= 10
+
+* Igual (==):
+  Conceito: Caso seja igual retorna 'True'
+  Exemplo:
+    eh_igual = 5 == 5
+
+* Diferente (!=):
+  Conceito: Caso seja diferente retorna 'True'
+  Exemplo:
+    eh_diferente = 5 != 10
+
+* Pertence (in):
+  Conceito: Caso pertença retorna 'True'
+  Exemplo:
+    lista = [1, 2, 3, 4, 5]
+    pertence = 3 in lista
+
+* Não pertence (not in):
+  Conceito: Caso não pertença retorna 'True'
+  Exemplo:
+    lista = [1, 2, 3, 4, 5]
+    nao_pertence = 6 not in lista
