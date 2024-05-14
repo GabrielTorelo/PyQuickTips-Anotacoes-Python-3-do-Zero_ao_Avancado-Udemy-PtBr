@@ -1,0 +1,20 @@
+* Se (if)
+  Conceito: Caso seja verdadeira a sentença, entra em seu escopo
+  Exemplo:
+    1 - Caso a entrada do usuário (user_input) seja 'S' deve-se imprimir a frase 'Bem-vindo ao sistema!'
+      if user_input.lower() == 's':
+        print('Bem-vindo ao sistema!')
+
+* Se não se (elif)
+  Conceito: Caso não seja verdadeira a primeira sentença, irá verificar essa sentença e caso seja verdadeira entra em seu escopo
+  Exemplo:
+    2 - Caso a entrada do usuário (user_input) seja 'N' deve-se imprimir a frase 'Não logado!'
+      elif user_input.lower() == 'n':
+        print('Não logado!')
+
+* Se não (else)
+  Conceito: Caso não seja verdadeira as outras sentenças entra em seu escopo
+  Exemplo:
+    3 - Caso a entrada do usuário (user_input) não seja 'S' ou 'N' deve-se imprimir a frase 'Opção inválida!'
+      else:
+        print('Opção inválida!')
