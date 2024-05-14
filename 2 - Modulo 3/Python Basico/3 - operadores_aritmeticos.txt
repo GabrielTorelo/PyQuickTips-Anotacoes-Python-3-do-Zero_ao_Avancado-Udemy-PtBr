@@ -1,22 +1,22 @@
 * Soma (+):
   Exemplo:
-    * soma = 10 + 10
+    soma = 10 + 10
 
 * Subtração (-):
   Exemplo:
-    * subtracao = 10 - 10
+    subtracao = 10 - 10
 
 * Divisão inteira (//):
   Conceito: Nessa divisão é retornada apenas a parte inteira da divisão (caso tenha algo na parte decimal é substituído por um 0).
   Exemplo:
-    * divisao = 10 // 3
+    divisao = 10 // 3
 
 * Exponenciação (**):
   Conceito: Esse operador realiza a exponenciação pelo valor a direita.
   Exemplo:
-    * exponenciacao = 2 ** 10
+    exponenciacao = 2 ** 10
 
 * Modulo (%):
   Conceito: Retorna o resto da divisão.
   Exemplo:
-    * modulo = 55 % 2
+    modulo = 55 % 2
