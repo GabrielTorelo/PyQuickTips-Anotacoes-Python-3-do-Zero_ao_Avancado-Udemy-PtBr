@@ -37,3 +37,36 @@ Como exibir algo no terminal?
       print('primeiro', 'segundo', sep='_')
     * Mudar o que é adicionado ao fim (end):
       print('primeiro', 'segundo', sep='_', end='*\n')
+
+É preciso especificar qual o tipo do dado?
+  Resposta: Não, Python possui tipagem dinâmica.
+  Ou seja: O tipo do dado já está implícito no próprio dado.
+
+** TUDO EM Python É UMA CLASSE!
+
+É possível converter dados para outro tipo?
+  Resposta: Sim, usando typecasting.
+  Exemplo:
+    1 - Converter uma 'string' para um 'int':
+      int('1')
+    2 - Converter uma 'string' para um 'float':
+      float('1')
+    2 - Converter uma 'string' para um 'bool':
+      bool('False')
+    3 - Converter um 'int' para uma 'string':
+      str(1)
+    4 - Converter um 'float' para uma 'string':
+      str(1.5)
+    5 - Converter um 'bool' para uma 'string':
+      str(True)
+
+É possível definir um dado que pode variar o seu valor?
+  Resposta: Sim, dados que variam os seus valores são chamados de variáveis
+  IMPORTANTE: Para definição de variáveis no Python, devemos seguir as boas práticas da PEP8 (SEMPRE iniciar variáveis com letras minúsculas e se preciso usar números e underlines).
+  Exemplo:
+    1 - Criando uma variável para armazenar um valor do tipo 'int':
+      idade_aluno = 24
+    2 - Criando uma variável para armazenar um valor do tipo 'float':
+      nota_aluno = 9.8
+    3 - Criando uma variável para armazenar um valor do tipo 'string':
+      nome_aluno = 'Luiz'
