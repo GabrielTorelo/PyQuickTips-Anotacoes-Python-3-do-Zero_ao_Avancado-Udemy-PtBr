@@ -1,0 +1,6 @@
+* Coletar Dados (input):
+  Conceito: Coleta e armazena os dados inseridos pelo usuário.
+  Exemplo:
+    1 - Coletar o input do usuário e armazenar na variável 'user_input'
+      user_input = input('Insira um valor: ')
+      print(f'O dobro do valor é {int(user_input) * 2}')
