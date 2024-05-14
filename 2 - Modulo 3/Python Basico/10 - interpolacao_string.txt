@@ -1,0 +1,12 @@
+Quando é usada?
+  Resposta: Quando necessitamos intercalar dados de variáveis e strings
+
+Abreviações para realizar a interpolação:
+  string => %s
+  int => %i ou %d
+  float => %f
+  Hexadecimal => %x ou %X
+
+Exemplo de interpolação:
+  1 - interpolar o nome do usuário e o valor total da compra
+    msg_compra = 'Olá %s, o valor total da compra é R$ %.2f' % ('Pedro', 56.98)
