@@ -1,0 +1,14 @@
+Variáveis:
+  Conceito: Dado que poderá sofrer alterações durante a execução do código.
+  Exemplo:
+    1 - Solicitar uma idade ao usuário e convertê-la para inteiro:
+      idade = input('Digite a sua idade: ')
+      idade = int(idade)
+
+Constantes:
+  Conceito: Dado que jamais será alterado durante a execução do código.
+  ATENÇÃO: No Python não existe de fato 'constantes', elas na verdade são "variáveis" que NÃO sofrem mudanças no seu valor durante a execução do código.
+  Convenção: Por convenção definimos as 'constantes' com TODAS AS SUAS LETRAS EM MAIÚSCULO.
+  Exemplo:
+    1 - Definir um dado imutável:
+      ID_SERVIDOR = 123456
