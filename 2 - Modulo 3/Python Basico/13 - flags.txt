@@ -1,0 +1,13 @@
+* É (is):
+  Conceito: Usado em comparações, caso algo seja IGUAL a alguma outra coisa retornará 'True'.
+  Analogia: Podemos fazer uma analogia ao operador '=='.
+  Exemplo:
+    1 - Verificar se o tipo de uma variável É "int":
+      if (type(idade) is int)
+
+* É não (is not):
+  Conceito: Usado em comparações, caso algo seja DIFERENTE a alguma outra coisa retornará 'True'.
+  Analogia: Podemos fazer uma analogia ao operador '!='.
+  Exemplo:
+    1 - Verificar se o tipo de uma variável NÃO É "int":
+      if (type(idade) is not int)
