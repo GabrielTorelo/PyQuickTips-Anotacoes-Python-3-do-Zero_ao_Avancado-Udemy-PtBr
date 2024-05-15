@@ -1,0 +1,16 @@
+Introdução ao try/except:
+  Conceito: Usado para tratar de forma adequada as situações inesperadas que ocorram durante a execução do código.
+  Analogia: Podemos fazer uma analogia ao "try/catch" de outras linguagens.
+  Exemplo:
+    1 - Solicitar uma idade e tentar converter o dado para inteiro, caso não seja possível informar uma mensagem:
+      try:
+        idade = input('Digite a sua idade: ')
+        idade = int(idade)
+        print(f'Sua idade é {idade} anos')
+      except:
+        print(f'Idade informada "{idade}" é inválida!')
+
+* Tentar (try):
+  Conceito: Tenta executar um trecho de código, caso não consiga gera uma 'exceção'.
+* Exceção (except):
+  Conceito: Trata exceções que são geradas pelo 'try'.
