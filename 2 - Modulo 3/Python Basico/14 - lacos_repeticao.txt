@@ -1,0 +1,43 @@
+Laços de repetição:
+  Conceito: Laço de repetição é uma estrutura usada para repetir trechos de códigos enquanto uma condição for verdadeira.
+  ATENÇÃO: Cuidado para não gerar Loops Infinitos (quando um trecho de código não tem fim)!
+
+* Para (for):
+  Conceito: Permite percorrer itens de uma coleção e, para cada um deles, executar um bloco de código.
+  Exemplo:
+    1 - Percorrer uma coleção de nomes e imprimir cada um deles:
+      nomes = ['Pedro', 'João', 'Leticia']
+      for n in nomes:
+        print(n)
+
+* Enquanto (while):
+  Conceito: Executa uma ação enquanto uma condição for verdadeira.
+  Exemplo:
+    1 - Percorrer uma coleção e imprimir cada valor presente nela:
+      i = 0
+      while i < len(nomes):
+        print(nomes[i])
+        i += 1
+
+* Quebrar (break):
+  Conceito: Quebra a execução de um laço de repetição.
+  Exemplo:
+    1 - Quebrar a execução de um laço while ao atingir a posição 2 de uma coleção:
+      if i == 2:
+        break
+
+* Continuar (continue):
+  Conceito: Usado para pular a execução do loop atual.
+  Ou seja: Ignora o trecho de código abaixo dele (continue) e inicia um novo loop (enquanto a condição do loop for verdadeira).
+  Exemplo:
+    1 - Iniciar um novo loop caso atinja a posição 1 de uma coleção:
+      if i == 1:
+        i += 1
+        continue
+
+* Faixa (range):
+  Conceito: Cria uma sequência de números que pode ser percorrida em um laço de repetição.
+  Exemplo:
+    1 - Percorrer uma faixa de números de 1 a 10 e imprimir cada um deles:
+      for num in range(1, 11):
+        print(num)
