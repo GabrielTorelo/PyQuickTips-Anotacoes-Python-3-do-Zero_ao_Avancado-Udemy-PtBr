@@ -1,0 +1,77 @@
+Listas de dados:
+  Conceito: Estrutura de dados que armazena uma coleção de itens, permitindo o acesso e manipulação desses itens de forma sequencial.
+  Analogia: Podemos fazer uma analogia ao 'array' presente em outras linguagens (literalmente a mesma coisa).
+  Tipagem: As listas não possuem uma tipagem de fato, podendo alocar dados de qualquer tipo nelas.
+  Exemplos:
+    1 - Criando uma lista de números inteiros:
+      numeros = [1, 2, 3, 4, 5]
+    2 - Criando uma lista com vários tipos diferentes
+      lista = [1, 1.5, 'Jose Aldo', True, []]
+  Métodos mais usados:
+    * Acrescentar (append):
+      Conceito: Adiciona um elemento ao final da lista.
+      Exemplo:
+        1 - Adicionando um novo elemento à lista de números:
+          numeros.append(6)
+    * Inserir (insert):
+      Conceito: Insere um elemento em uma posição específica da lista.
+      Exemplo:
+        1 - Inserindo o número 10 na segunda posição da lista:
+          numeros.insert(1, 10)
+    * Remover (pop):
+      Conceito: Remove e retorna o último elemento da lista ou um elemento em uma posição específica.
+      Exemplos:
+        1 - Removendo o último elemento da lista:
+          numeros.pop()
+        2 - Removendo um elemento específico na lista:
+          numeros.pop(2)
+    * Deletar (del):
+      Conceito: Remove um elemento em uma posição específica da lista.
+      Exemplo:
+        1 - Removendo o segundo elemento da lista:
+          del numeros[1]
+    * Limpar lista (clear):
+      Conceito: Remove todos os elementos da lista, deixando-a vazia.
+      Exemplo:
+        1 - Limpando a lista de números:
+          numeros.clear()
+    * Estender (extend):
+      Conceito: Adiciona os elementos de outra lista ao final da lista atual.
+      Exemplo:
+        1 - Estendendo a lista de números com uma nova lista:
+          numeros.extend([6, 7, 8])
+    * Concatenação (+):
+      Conceito: Concatena os elementos de duas ou mais listas (sem modificar as listas).
+      Exemplo:
+        1 - Concatenar a lista de números com uma nova lista:
+          lista_numeros = numeros + [6, 7, 8]
+    * Copiar (copy):
+      Conceito: Cria uma cópia superficial da lista em um objeto diferente na memória.
+      Ou seja: Copia os elementos da lista para uma nova lista, mantendo os mesmos valores.
+      Exemplo:
+        1 - Criando uma cópia da lista de números:
+          copia_numeros = numeros.copy()
+    * Empacotamento (*_):
+      Conceito: Permite empacotar elementos em uma estrutura de dados (como uma lista) usando o operador '*'.
+      Exemplo:
+        1 - Empacotando elementos em uma lista:
+          *_, ultimo_elemento = numeros
+    * Desempacotamento (*_):
+      Conceito: Permite extrair elementos de uma estrutura de dados em variáveis separadas usando o operador '*'.
+      Exemplo:
+        1 - Desempacotando uma lista em variáveis separadas:
+          _, b, *_ = numeros
+    * Tuplas ( () ):
+      Conceito: São estruturas de dados semelhantes às listas, porém IMUTÁVEIS.
+      Ou seja: Uma vez criadas, não podem ser alteradas.
+      Exemplo:
+        1 - Criando uma tupla de coordenadas:
+          coordenadas = (10, 20)
+    * Enumerar (enumerate):
+      Conceito: Usado para iterar simultaneamente sobre os índices e os valores de uma sequência, retornando tuplas contendo o índice e o valor correspondente em cada iteração.
+      Ou seja: Ao usa-lo é possível acessar tanto o índice quanto o valor de cada item em uma sequência durante uma iteração.
+      Exemplo:
+        1 - Iterando sobre uma lista:
+          for indice, valor in enumerate(numeros):
+            print(f'{indice = }, {valor = }')
+ 
