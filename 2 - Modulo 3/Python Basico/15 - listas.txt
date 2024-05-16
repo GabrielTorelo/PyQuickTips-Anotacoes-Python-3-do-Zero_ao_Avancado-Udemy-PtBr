@@ -74,4 +74,9 @@ Listas de dados:
         1 - Iterando sobre uma lista:
           for indice, valor in enumerate(numeros):
             print(f'{indice = }, {valor = }')
- 
+    * Desempacotamento em chamadas (*):
+      Conceito: É uma técnica que permite passar os elementos de uma lista ou tupla como argumentos separados.
+      Ou seja: Em vez de passar a lista ou tupla diretamente, utilizamos o operador '*' para desempacotar os elementos e passá-los como argumentos individuais.
+      Exemplo:
+        1 - Passando os elementos de uma lista como argumentos:
+          print(*["Olá", "mundo", "!"])
