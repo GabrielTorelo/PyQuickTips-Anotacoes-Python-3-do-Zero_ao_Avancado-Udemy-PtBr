@@ -9,7 +9,7 @@
 lista = []
 
 while True:
-  print('Selecione uma opção')
+  print('\nSelecione uma opção')
   opcao = input('[I]nserir [A]pagar [L]istar: ').lower()
 
   if opcao == 'i':
@@ -33,8 +33,10 @@ while True:
   elif opcao == 'l':
     if len(lista) == 0:
       print('\nNão possui nada para ser listado!')
-
-    for i, valor in enumerate(lista):
-      print('\n', i, valor)
+    else:
+      print('\nLista de compras:')
+    
+    for i, val in enumerate(lista):
+      print(i, val)
   else:
-      print('\nPor favor, escolha i, a ou l.')
+      print('\nOperação inválida.')
