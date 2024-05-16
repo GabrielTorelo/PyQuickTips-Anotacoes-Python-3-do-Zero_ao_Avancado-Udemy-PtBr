@@ -1,0 +1,44 @@
+Introdução a funções:
+  Conceito: As funções são blocos de código reutilizáveis que realizam uma tarefa específica.
+  Uso: Elas Permitem organizar e modularizar o código, facilitando a leitura, manutenção e reutilização.
+  Analogia: Assim como você escolhe uma chave de fenda para parafusar, você chama uma função para realizar uma operação específica no código.
+  Exemplos:
+    1 - Criar uma função que imprima 'Olá Mundo!':
+      def python():
+        print('Olá Mundo!')
+    2 - Criar uma função que receba 2 números por parâmetro e some eles:
+      def soma(a, b):
+        return a + b
+
+Argumentos nomeados (argumentos de palavra-chave):
+  Conceito: São aqueles em que cada parâmetro da função é associado explicitamente a um valor ao chamar a função.
+  Uso: Permite que os argumentos sejam passados fora de ordem e torna mais claro cada argumento da função.
+  Exemplo: 
+    1 - Chamar a função soma passando 2 argumentos nomeados para ela:
+      soma(b=5, a=10)
+
+Valores padrões:
+  Conceito: São valores predefinidos atribuídos a parâmetros de uma função.
+  Uso: São úteis quando desejamos que um parâmetro tenha um valor pré-determinado na maioria das chamadas da função, que possa ser substituído caso necessário.
+  Exemplo:
+    1 - Definir um valor padrão para um parâmetro em uma função:
+      def carro(modelo, cor='preto'):
+        print(f"Modelo: {modelo}, Cor: {cor}")
+
+Escopos de funções:
+  Conceito: Refere-se à área em que uma variável definida dentro da função pode ser acessada.
+  Ou seja: Variáveis ​​definidas dentro de uma função têm escopo local, o que significa que elas só podem ser acessadas de dentro da própria função.
+  Uso: Evitar conflitos de nomeação e mantêm a organização do código, permitindo que variáveis tenham o mesmo nome.
+  Exemplo:
+    1 - Definir e usar variáveis dentro de uma função:
+      def minha_funcao():
+        x = 10
+
+Retorno das funções:
+  Conceito: O retorno de uma função é o valor que a função produz e "devolve" ao ponto de chamada após sua execução.
+  Ou seja: É a saída que a função fornece após a execução de suas operações.
+  Uso: Utilizado para passar informações de volta para o código que chamou a função.
+  Exemplo:
+    1 - Definir uma função que retorne a soma de dois números:
+      def soma(a, b):
+        return a + b
