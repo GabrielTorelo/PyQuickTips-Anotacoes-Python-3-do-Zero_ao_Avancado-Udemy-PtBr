@@ -1,0 +1,16 @@
+Métodos mais usados:
+  * Dividir (split):
+    Conceito: Usado para dividir uma string e retornar uma lista de substrings com base em um separador especificado.
+    Exemplo:
+      1 - Dividindo uma frase em palavras usando espaço como separador:
+        palavras = 'Esta é uma frase de exemplo'.split()
+  * Faixa (strip):
+    Conceito: Usado para remover espaços em branco (ou outros caracteres especificados) do início e do final de uma string.
+    Exemplo:
+      1 - Removendo espaços em branco do início e do final de uma string:
+        texto_sem_espacos = '    Olá, mundo!    '.strip()
+  * Juntar (join):
+    Conceito: Usado para concatenar os elementos de uma sequência usando um separador especificado.
+    Exemplo:
+      1 - Juntando uma lista de palavras em uma única frase:
+        frase = " ".join(["Esta", "é", "uma", "frase", "de", "exemplo"])
