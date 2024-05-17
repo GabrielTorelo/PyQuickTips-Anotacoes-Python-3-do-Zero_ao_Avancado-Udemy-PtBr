@@ -1,0 +1,54 @@
+Introdução aos conjuntos:
+  Conceito: Conjuntos são coleções desordenadas de elementos únicos (não pode conter elementos repetidos).
+  Uso: Conjuntos são usados para armazenar e manipular coleções de elementos distintos.
+  Analogia: Pensar na matemática de conjuntos.
+
+  Métodos mais usados:
+    * Definir (set):
+      Conceito: Cria um novo conjunto a partir de um iterável, removendo qualquer elemento duplicado.
+      Exemplo:
+        1 - Criando um conjunto a partir de uma lista com elementos duplicados:
+          print(set(lista_frutas))
+    * Adicionar (add):
+      Conceito: Adiciona um elemento ao conjunto.
+      Atenção: Se o elemento já estiver presente, não faz nada (não gera erro).
+      Exemplo:
+        1 - Adicionando um elemento ao conjunto:
+          print(frutas.add("abacaxi"))
+    * Atualizar (update):
+      Conceito: Adiciona múltiplos elementos ao conjunto. Aceita qualquer iterável, como listas, conjuntos ou tuplas.
+      Exemplo:
+        1 - Adicionando múltiplos elementos ao conjunto:
+          print(frutas.update(novas_frutas))
+    * Remover (remove):
+      Conceito: Remove um elemento específico do conjunto.
+      Cuidado: Se o elemento não estiver presente gera uma exceção (KeyError).
+      Exemplo:
+        1 - Removendo um elemento do conjunto:
+          print(frutas.remove("banana"))
+    * Limpar (clear):
+      Conceito: Remove todos os elementos do conjunto, deixando-o vazio.
+      Exemplo:
+        1 - Limpando o conjunto:
+          print(frutas.clear())
+    * Descartar (discard):
+      Conceito: Remove um elemento específico do conjunto
+      Atenção: Se o elemento não estiver presente, não faz nada (não gera erro).
+      Exemplo:
+        1 - Descartando um elemento do conjunto:
+          print(frutas.discard("banana"))
+    * União (union):
+      Conceito: Retorna um novo conjunto contendo todos os elementos dos conjuntos envolvidos na operação.
+      Exemplo:
+        1 - Realizando a união de dois conjuntos:
+          print(frutas.union(outras_frutas))
+    * Interseção (intersection):
+      Conceito: Retorna um novo conjunto contendo apenas os elementos que são comuns aos conjuntos envolvidos na operação.
+      Exemplo:
+        1 - Realizando a interseção de dois conjuntos:
+          print(frutas.intersection(outras_frutas))
+    * Diferença (difference):
+      Conceito: Retorna um novo conjunto contendo os elementos do conjunto original que não estão presentes no conjunto fornecido.
+      Exemplo:
+        1 - Realizando a diferença entre dois conjuntos:
+          print(frutas.difference(outras_frutas))
