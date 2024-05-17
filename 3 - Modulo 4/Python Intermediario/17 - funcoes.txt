@@ -51,3 +51,13 @@ Retorno das funções:
     1 - Definir uma função que retorne a soma de dois números:
       def soma(a, b):
         return a + b
+
+* Fecho (Closure):
+  Conceito: É uma função definida dentro de outra função que captura e lembra o estado das variáveis da função externa, mesmo após a execução da função externa ter sido concluída.
+  Ou seja: Permite que uma função interna acesse as variáveis da função externa mesmo depois que a função externa tenha terminado sua execução.
+  Exemplo:
+    1 - Criar uma função de fecho que gera funções multiplicadoras:
+      def multiplicador(fator):
+        def multiplica(numero):
+          return numero * fator
+        return multiplica
