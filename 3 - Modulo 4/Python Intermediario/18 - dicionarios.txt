@@ -1,0 +1,73 @@
+Introdução aos dicionários:
+  Conceito: Um dicionário é uma estrutura de dados que armazena pares de chave-valor.
+  Uso: Dicionários são usados para armazenar dados que possuem uma relação de mapeamento entre chave e valor.
+  Analogia: Podemos fazer uma analogia ao JSON.
+  Tipagem: Os dicionários não possuem uma tipagem de fato, podendo alocar dados de qualquer tipo neles.
+  Exemplos:
+    1 - Criar um dicionário para armazenar pessoas:
+      pessoas = {
+        'Carol': {'telefone': '5678-1234', 'email': 'carolina@gmail.com'},
+        'Marcos': {'telefone': '1234-5678', 'email': 'marc2024@gmail.com'},
+        'Alice': {'telefone': '8765-4321', 'email': 'alice2024@gmail.com'}
+      }
+  Métodos mais usados:
+    * Quantidade de chaves (len):
+      Conceito: Retorna o número de pares chave-valor presentes no dicionário.
+      Exemplo:
+        1 - Imprimir o número de itens no dicionário:
+          print(len(pessoas))
+    * Iterável com chaves (keys):
+      Conceito: Retorna uma visão iterável das chaves do dicionário.
+      Ou seja: Retorna uma classe do tipo 'dict_keys(...)'
+        Solução: Converter os dados retornados para uma tupla/lista ( tuple(pessoas.keys()) || list(pessoas.keys()) )
+      Exemplo:
+        1 - Imprimir um iterável com as chaves do dicionário:
+          print(pessoas.keys())
+    * Iterável com valores (values):
+      Conceito: Retorna uma visão iterável dos valores do dicionário.
+      Ou seja: Retorna uma classe do tipo 'dict_values(...)'
+        Solução: Converter os dados retornados para uma tupla/lista ( tuple(pessoas.values()) || list(pessoas.values()) )
+      Exemplo:
+        1 - Imprimir um iterável com os valores do dicionário:
+          print(pessoas.values())
+    * Iterável com chaves e valores (items):
+      Conceito: Retorna uma visão iterável das chaves e dos valores do dicionário.
+      Ou seja: Retorna uma classe do tipo 'dict_items(...)'
+        Solução: Converter os dados retornados para uma tupla/lista ( tuple(pessoas.items()) || list(pessoas.items()) )
+      Exemplo:
+        1 - Imprimir um iterável com as chaves e os valores do dicionário:
+          print(pessoas.items())
+    * Adiciona caso não exista (setdefault):
+      Conceito: Adiciona uma chave com um valor padrão se a chave não estiver presente no dicionário.
+      Exemplo:
+        1 - Adicionar um dicionário padrão:
+          pessoas.setdefault('Null', {'telefone': '0000-0000', 'email': 'null@null.com'})
+    * Copiar (copy):
+      Conceito: Retorna uma cópia superficial do dicionário.
+      Ou seja: Caso existam sublistas no dicionário elas são apenas linkadas (alterando qualquer uma delas é alterado em ambas).
+      Exemplo:
+        1 - Fazer uma cópia de um dicionário para outro:
+          copia_pessoas = pessoas.copy()
+    * Obter chave (get):
+      Conceito: Retorna o valor para uma chave especificada, se a chave estiver no dicionário.
+      Atenção: Se a chave não estiver presente, retorna um valor padrão (por padrão, None).
+      Exemplo:
+        1 - Obter os dados do dicionário 'Carol':
+          print('Carol: ', pessoas.get('Carol'))
+    * Apagar específico (pop):
+      Conceito: Remove a chave especificada do dicionário e retorna o valor correspondente.
+      Cuidado: Se a chave não for encontrada gera uma exceção (KeyError).
+      Exemplo:
+        1 - Remover os dados do dicionário 'Carol':
+          print('Carol: ', pessoas.pop('Carol'))
+    * Apagar último (popitem):
+      Conceito: Remove e retorna o último par chave-valor inserido no dicionário (último par inserido é o último no dicionário).
+      Exemplo:
+        1 - Remover o último par chave-valor inserido:
+          print('Último (removido): ', pessoas.popitem())
+    * Atualizar com outro (update):
+      Conceito: Atualiza o dicionário adicionando pares chave-valor de outro dicionário ou iterável.
+      Ou seja: Combina os elementos de dois dicionários, adicionando novas chaves e substituindo os valores das chaves existentes com os valores do dicionário fornecido.
+      Exemplo:
+        1 - Atualizar o dicionário de pessoas com novos valores:
+          print(pessoas.update(outras_pessoas))
