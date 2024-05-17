@@ -17,6 +17,15 @@ Argumentos nomeados (argumentos de palavra-chave):
     1 - Chamar a função soma passando 2 argumentos nomeados para ela:
       soma(b=5, a=10)
 
+Argumentos não nomeados (*args):
+  Conceito: É usado para passar um lista de argumentos variáveis sem palavras-chave em forma de tupla.
+  Ou seja: Usando '*args', você pode passar qualquer quantidade de argumentos para a função sem precisar defini-los explicitamente na assinatura da função.
+  Exemplo:
+    1 - Definir uma função que aceita múltiplos argumentos e imprima cada um deles:
+      def imprime_argumentos(*args):
+        for arg in args:
+          print(arg)
+
 Valores padrões:
   Conceito: São valores predefinidos atribuídos a parâmetros de uma função.
   Uso: São úteis quando desejamos que um parâmetro tenha um valor pré-determinado na maioria das chamadas da função, que possa ser substituído caso necessário.
