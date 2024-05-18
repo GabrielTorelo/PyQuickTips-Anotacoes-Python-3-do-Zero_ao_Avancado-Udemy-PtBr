@@ -1,6 +1,7 @@
 Introdução aos conjuntos:
   Conceito: Conjuntos são coleções desordenadas de elementos únicos (não pode conter elementos repetidos).
   Uso: Conjuntos são usados para armazenar e manipular coleções de elementos distintos.
+  Tipagem: Os conjuntos aceitam apenas tipos imutáveis.
   Analogia: Pensar na matemática de conjuntos.
 
   Métodos mais usados:
@@ -37,18 +38,29 @@ Introdução aos conjuntos:
       Exemplo:
         1 - Descartando um elemento do conjunto:
           print(frutas.discard("banana"))
+
+  Operadores mais usados:
     * União (union):
       Conceito: Retorna um novo conjunto contendo todos os elementos dos conjuntos envolvidos na operação.
+      Atenção: Não altera nenhum dos conjuntos, apenas cria um novo.
       Exemplo:
         1 - Realizando a união de dois conjuntos:
           print(frutas.union(outras_frutas))
     * Interseção (intersection):
       Conceito: Retorna um novo conjunto contendo apenas os elementos que são comuns aos conjuntos envolvidos na operação.
+      Atenção: Não altera nenhum dos conjuntos, apenas cria um novo.
       Exemplo:
         1 - Realizando a interseção de dois conjuntos:
           print(frutas.intersection(outras_frutas))
     * Diferença (difference):
       Conceito: Retorna um novo conjunto contendo os elementos do conjunto original que não estão presentes no conjunto fornecido.
+      Atenção: Não altera nenhum dos conjuntos, apenas cria um novo.
       Exemplo:
         1 - Realizando a diferença entre dois conjuntos:
           print(frutas.difference(outras_frutas))
+    * Diferença simétrica (symmetric_difference):
+      Conceito: Retorna um novo conjunto contendo os elementos que não estão presentes em ambos os conjuntos.
+      Atenção: Não altera nenhum dos conjuntos, apenas cria um novo.
+      Exemplo:
+        1 - Realizando a diferença simétrica entre dois conjuntos:
+          print(frutas.symmetric_difference(outras_frutas))
