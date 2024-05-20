@@ -12,6 +12,7 @@ Introdução a funções:
 
 Argumentos nomeados (argumentos de palavra-chave):
   Conceito: São aqueles em que cada parâmetro da função é associado explicitamente a um valor ao chamar a função.
+  ATENÇÃO: Também podemos ver os argumentos nomeados como '*kwargs'.
   Uso: Permite que os argumentos sejam passados fora de ordem e torna mais claro cada argumento da função.
   Exemplo: 
     1 - Chamar a função soma passando 2 argumentos nomeados para ela:
