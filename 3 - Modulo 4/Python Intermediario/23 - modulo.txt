@@ -12,3 +12,20 @@ Introdução a importação de módulos:
       from sys import exit
     4 - Renomear a importação de um módulo:
       import sys as sy
+
+Módulos próprios:
+  Conceito: Módulos próprios são arquivos Python (.py) que contêm implementações de funções, classes e variáveis que podem ser reutilizadas.
+  Ou seja: Qualquer arquivo Python (.py) pode ser considerado um módulo, podendo ser importado e utilizado.
+  ATENÇÃO: SEMPRE o PRIMEIRO módulo executado chama-se '__main__'.
+  Cuidado: O python só conhece a pasta onde o '__main__' está e as pastas abaixo dele.
+  Uso: Usado para dividir projetos em partes menores, permitindo a reutilização de código e facilitando a manutenção.
+  Exemplos:
+    1 - Utilizando um módulo próprio:
+      import meu_modulo
+      print(meu_modulo.soma(3, 4))
+    2 - Importando uma função específica do módulo:
+      from meu_modulo import soma
+      print(soma(10, 5))
+    3 - Usando alias para módulos:
+      import meu_modulo as mm
+      print(mm.soma(7, 3))
