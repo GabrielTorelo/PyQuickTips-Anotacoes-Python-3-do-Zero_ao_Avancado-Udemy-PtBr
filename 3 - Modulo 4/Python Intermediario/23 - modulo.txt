@@ -1,0 +1,14 @@
+Introdução a importação de módulos:
+  Conceito: Importações de módulos são utilizadas para trazer funcionalidades de outros arquivos para o código atual. 
+  Ou seja: Elas permitem acessar funções, classes e variáveis definidas em outros módulos.
+  Uso: As importações podem serem feitas de diferentes formas, importando um módulo completo, partes específicas ou até mesmo renomear a importação para facilitar o seu uso no código.
+  Dica: Em termos de memória é irrelevante importar um módulo inteiro ou apenas partes dele.
+  Exemplos:
+    1 - Importar um módulo completo:
+      import sys
+    2 - Importar todas as funções de um módulo:
+      import sys as *
+    3 - Importar algo específico de um módulo:
+      from sys import exit
+    4 - Renomear a importação de um módulo:
+      import sys as sy
