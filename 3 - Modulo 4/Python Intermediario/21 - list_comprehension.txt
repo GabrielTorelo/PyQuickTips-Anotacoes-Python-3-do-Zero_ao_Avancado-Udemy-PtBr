@@ -1,0 +1,20 @@
+Introdução a compreensão de listas (list comprehension):
+  Conceito: A compreensão de listas é uma forma breve de criar listas, permitindo combinar loops e condicionais em uma única linha de código.
+  Ou seja: É uma forma compacta de escrever um loop e/ou uma condicional em uma única linha.
+  Uso: Usada para transformar ou filtrar elementos de uma lista existente, criando uma nova lista com base em uma expressão ou condição.
+  Dica: 
+    1 - Quando temos uma 'condicional' ANTERIOR ao 'loop' (dentro da lista):
+      TEMOS UM MAPEAMENTO -> Ou seja, estamos mapeando o valor retornado pelo 'loop'
+        Exemplo: quadrados = [x**2 for x in range(1, 11)]
+    2 - Quando temos uma 'condicional' POSTERIOR ao 'loop' (dentro da lista):
+      TEMOS UM FILTRO -> Ou seja, estamos filtrando o valor retornado pelo 'loop'
+        Exemplo: numeros_pares = [x for x in numeros if x % 2 == 0]
+  Exemplos:
+    1 - Criar uma lista com os quadrados dos números de 1 a 10:
+      quadrados = [x**2 for x in range(1, 11)]
+    2 - Filtrar os números pares de uma lista:
+      numeros_pares = [x for x in numeros if x % 2 == 0]
+    3 - Transformar uma lista de strings em letras maiúsculas:
+      letras_maiusculas = [letra.upper() for letra in letras]
+    4 - Criar uma lista com os números ímpares entre 1 e 20, excluindo os múltiplos de 3:
+      numeros_impares = [x for x in range(1, 21) if x % 2 != 0 and x % 3 != 0]
