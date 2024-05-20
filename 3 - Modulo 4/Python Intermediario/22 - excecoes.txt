@@ -1,0 +1,44 @@
+Tratamento de exceções:
+  Conceito: O tratamento de exceções é uma técnica utilizada para lidar com erros que podem ocorrer durante a execução de um programa, ao invés de simplesmente interromper abruptamente a execução.
+  Ou seja: Quando um erro ocorre em um trecho de código, uma exceção é lançada.
+  Uso: Permite específicar como o programa deve se comportar quando uma exceção é lançada, fornecendo uma maneira de lidar com o erro de forma adequada.
+  Dica: Ao lidar com exceções, é importante ser específico sobre os tipos de exceções que você deseja capturar e tratar.
+  Exemplos:
+    1 - Capturando uma exceção ocorrida ao tentar dividir um número por zero:
+      except ZeroDivisionError:
+        print("Erro: divisão por zero")
+    2 - Capturando uma exceção ocorrida ao tentar abrir um arquivo inexistente:
+      except FileNotFoundError:
+        print("Erro: arquivo não encontrado")
+    3 - Capturando uma exceção ocorrida ao tentar converter uma string em um número inteiro:
+      except ValueError:
+        print("Erro: valor inválido")
+    4 - Capturando uma exceção genérica:
+      except Exception:
+        print("Erro desconhecido!")
+
+Capturando o erro (as erro):
+  Conceito: Utilizando a palavra-chave "as" seguida de um nome de variável, é possível acessar informações adicionais sobre o erro, como a mensagem do erro.
+  Ou seja: Capturando o erro é possível realizar ações específicas com base nas informações contidas no erro.
+  Uso: É útil quando se deseja obter mais detalhes sobre o erro ocorrido, como registrar em um log ou exibir uma mensagem de erro mais específica.
+  Exemplo:
+    1 - Capturando uma exceção ocorrida ao tentar abrir um arquivo inexistente e exibindo a mensagem de erro:
+      except FileNotFoundError as error:
+        print("Erro: arquivo não encontrado -", error)
+
+Realizando ação após captura de erro (finally):
+  Conceito: O bloco "finally" é utilizado para definir um trecho de código que será executado independentemente de ocorrer uma exceção ou não.
+  Ou seja: O código dentro do bloco "finally" será executado mesmo se uma exceção for lançada e capturada.
+  Uso: É útil para realizar ações que devem ser executadas independentemente do resultado da execução do bloco de código principal.
+  Exemplo:
+    1 - Imprimindo no console após a captura de erro:
+      finally:
+        print("Você tentou abrir um arquivo de texto")
+
+Realizando chamada de erro (raise):
+  Conceito: A palavra-chave "raise" é utilizada para lançar uma exceção manualmente em um programa.
+  Ou seja: É possível criar e lançar exceções personalizadas de acordo com as necessidades do programa.
+  Uso: É útil quando se deseja sinalizar um erro específico ou criar um fluxo de controle personalizado.
+  Exemplo:
+    1 - Lançando uma exceção personalizada quando um valor inválido é encontrado:
+      raise ValueError("O valor não pode ser negativo")
