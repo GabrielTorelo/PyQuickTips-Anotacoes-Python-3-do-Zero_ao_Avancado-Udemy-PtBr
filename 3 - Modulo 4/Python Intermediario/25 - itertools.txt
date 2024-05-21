@@ -1,0 +1,67 @@
+O que é o 'itertools'?
+  Resposta: É um módulo que fornece várias funções de iteradores eficientes para realizar tarefas.
+Para o que é útil?
+  Resposta: Suas funções disponibilizadas são especialmente úteis para manipulação de dados que exigem iterações. 
+
+Iteradores infinitos:
+  Métodos:
+    * Contar (count):
+      Conceito: Gera uma sequência infinita de números, começando de um valor inicial (sendo 0 caso não seja passado) e incrementando.
+      Exemplo:
+        1 - Contar a partir de 10:
+          for i in count(10):
+            print(f"Entrou pela {i}ª vez")
+    * Ciclo (cycle):
+      Conceito: Itera infinitamente sobre um iterável, reiniciando quando chega ao final.
+      Exemplo:
+        1 - Ciclar sobre uma lista de cores:
+          ciclo_cores = cycle(cores)
+          for _ in range(6):
+            print(next(ciclo_cores))
+    * Repita (repeat):
+      Conceito: Repete um valor infinitamente ou um número específico de vezes.
+      Exemplo:
+        1 - Repetir a string "Python" três vezes:
+          for item in repeat('Python', 3):
+            print(item)
+
+Iteradores combinatórios:
+  Métodos mais usados:
+    * Produto cartesiano (product):
+      Conceito: Retorna o produto cartesiano de iteráveis, equivalente ao aninhamento de loops for.
+      Exemplo:
+        1 - Produto cartesiano de duas listas:
+          print(list(product(lista1, lista2)))
+    * Combinações (combinations):
+      Conceito: Retorna todas as combinações possíveis de um iterável, sem repetição.
+      Exemplo:
+        1 - Combinações de tamanho 2 de uma lista:
+          print(list(combinations(lista, 2)))
+    * Permutações (permutations):
+      Conceito: Retorna todas as permutações possíveis de um iterável.
+      Exemplo:
+        1 - Permutações de tamanho 2 de uma lista:
+          print(list(permutations(lista, 2)))
+
+Iteradores terminando na sequencia de entrada mais curta:
+  Métodos mais usados:
+    * Acumular (accumulate):
+      Conceito: Retorna os valores acumulados de um iterável, como uma soma acumulada.
+      Exemplo:
+        1 - Soma acumulada de uma lista:
+          print(list(accumulate(lista)))
+    * Remover enquanto (dropwhile):
+      Conceito: Remove elementos de um iterável enquanto a condição for verdadeira e depois retorna os elementos restantes.
+      Exemplo:
+        1 - Remover enquanto o número for menor que 5:
+          print(list(dropwhile(lambda x: x < 5, lista)))
+    * Pegar enquanto (takewhile):
+      Conceito: Retorna elementos de um iterável enquanto a condição for verdadeira.
+      Exemplo:
+        1 - Pegar enquanto o número for menor que 5:
+          print(list(takewhile(lambda x: x < 5, lista)))
+    * Zipagem mais longa (zip_longest):
+      Conceito: Faz a iteração em paralelo de vários iteráveis, preenchendo com um valor especificado quando os iteráveis têm comprimentos diferentes.
+      Exemplo:
+        1 - Zipear duas listas de comprimentos diferentes:
+          print(list(zip_longest(lista1, lista2, fillvalue='Não existe')))
