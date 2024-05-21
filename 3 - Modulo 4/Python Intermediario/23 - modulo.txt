@@ -29,3 +29,20 @@ Módulos próprios:
     3 - Usando alias para módulos:
       import meu_modulo as mm
       print(mm.soma(7, 3))
+
+Pacotes (packages):
+  Conceito: Pacotes são diretórios que contêm múltiplos módulos Python.
+  Cuidado: O Python só conhece a pasta onde o '__main__' está e as pastas abaixo dela, então, organize seus pacotes dentro dessas pastas.
+  Uso: Usado para organizar módulos relacionados em uma estrutura hierárquica, facilitando a navegação e a manutenção do código.
+  Dica: Ao usar um arquivo '__init__.py' o Python reconheçe um pacote como um módulo.
+    Ou seja: É possível utilizá-lo como um facilitador de chamada, podendo referenciar e disponibilizar 'n' módulos em um simples 'import'.
+  Exemplos:
+    1 - Estrutura básica de um pacote:
+      import meu_pacote
+      print(meu_pacote.modulo1.soma(1, 3))
+    2 - Importando uma função específica de um módulo dentro de um pacote:
+      from meu_pacote.modulo1 import soma
+      print(soma(7, 3))
+    3 - Usando alias para um módulo de um pacote:
+      import meu_pacote.modulo1 as mod1
+      print(mod1.soma(10, 5))
