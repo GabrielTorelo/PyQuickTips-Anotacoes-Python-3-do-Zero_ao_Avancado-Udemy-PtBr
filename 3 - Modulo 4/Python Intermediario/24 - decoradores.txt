@@ -1,0 +1,32 @@
+Introdução aos decoradores:
+  Conceito: São funções que modificam o comportamento de outras funções ou métodos, permitindo adicionar funcionalidade de maneira flexível e reutilizável.
+  Ou seja: Um decorador é uma função que recebe outra função como argumento e realiza modificações na mesma.
+  Uso: Usado para modificar argumentos ou retornar valores, sem alterar o código da função original.
+  Dicas:
+    1 - Use o símbolo "@" seguido do nome do decorador diretamente acima da definição da função que deseja decorar.
+    2 - A ORDEM de aplicação dos decoradores é de BAIXO para CIMA.
+      Ou seja: O decorador MAIS PRÓXIMO da função será o PRIMEIRO a ser executado.
+  Exemplo:
+    1 - Criando e utilizando um decorador simples:
+      @meu_decorador
+      def minha_funcao():
+        print(f"Onde estou? {minha_funcao.__name__}")
+
+Açúcar sintático (Sugarsyntax): 
+  Conceito: Refere-se a uma forma mais concisa e legível de escrever códigos sem alterar as funcionalidades básicas de uma função.
+  Ou seja: Faz com que a função decoradora seja chamada automaticamente e passe a função decorada como argumento, tornando o código mais limpo e fácil de ler.
+  Uso: Simplifica o uso de decoradores, permitindo que eles sejam aplicados diretamente com a notação "@".
+  Exemplo:
+    1 - Salvando um 'log' da função executada:
+      @decora_log
+      def soma(a, b):
+        return a + b
+
+Decoradores com parâmetros:
+  Conceito: São decoradores que aceitam argumentos adicionais e permitem personalizar o comportamento do decorador com base nesses argumentos.
+  Uso: Usado para adicionar funcionalidades configuráveis a funções ou métodos.
+  Exemplo:
+    1 - Utilizando um decorador com parâmetro:
+        @fabrica_decoradores(1)
+        def soma2(a, b):
+          return a + b
