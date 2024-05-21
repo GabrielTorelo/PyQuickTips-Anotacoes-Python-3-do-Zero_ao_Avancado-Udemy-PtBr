@@ -50,6 +50,11 @@ Iteradores terminando na sequencia de entrada mais curta:
       Exemplo:
         1 - Soma acumulada de uma lista:
           print(list(accumulate(lista)))
+    * Agrupar por (groupby):
+      Conceito: Agrupa elementos de um iterável que possuem o mesmo valor ou que retornam o mesmo valor quando aplicada uma função.
+      Exemplo:
+        1 - Agrupando uma lista de números consecutivos:
+          print(groupby(lista))
     * Remover enquanto (dropwhile):
       Conceito: Remove elementos de um iterável enquanto a condição for verdadeira e depois retorna os elementos restantes.
       Exemplo:
