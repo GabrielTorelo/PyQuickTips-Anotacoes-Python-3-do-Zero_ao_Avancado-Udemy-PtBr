@@ -1,3 +1,3 @@
-import packages.math as packMath
+import packages as math
 
-print(packMath.soma(7, 3))
+print(math.soma(7, 3))
