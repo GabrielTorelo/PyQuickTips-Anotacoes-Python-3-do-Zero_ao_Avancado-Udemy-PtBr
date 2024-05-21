@@ -2,7 +2,7 @@ Introdução a compreensão de listas (list comprehension):
   Conceito: A compreensão de listas é uma forma breve de criar listas, permitindo combinar loops e condicionais em uma única linha de código.
   Ou seja: É uma forma compacta de escrever um loop e/ou uma condicional em uma única linha.
   Uso: Usada para transformar ou filtrar elementos de uma lista existente, criando uma nova lista com base em uma expressão ou condição.
-  Dica: 
+  Dicas: 
     1 - Quando temos uma 'condicional' ANTERIOR ao 'loop' (dentro da lista):
       TEMOS UM MAPEAMENTO -> Ou seja, estamos mapeando o valor retornado pelo 'loop'
         Exemplo: quadrados = [x**2 for x in range(1, 11)]
