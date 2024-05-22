@@ -1,3 +1,9 @@
+O que são ambientes virtuais?
+  Resposta: São espaços isolados criados para conter instalações de bibliotecas e dependências de projetos de forma independente. 
+  Dica: Cada ambiente virtual possui seu próprio conjunto de pacotes, permitindo que diferentes projetos utilizem diferentes versões das mesmas bibliotecas sem conflitos.
+  Uso: Usados para gerenciar dependências de projetos de maneira isolada.
+  Analogia: Podemos fazer uma analogia a 'node_modules' da linguagem 'JavaScript' (não é exatamente a mesma coisa)
+
 Criar um "Ambiente Virtual":
   python -m venv venv
 
@@ -13,3 +19,9 @@ Ativar o "Ambiente Virtual":
           Set-ExecutionPolicy AllSigned -Force
       * Se retornar "Unrestricted" ou "AllSigned":
         TUDO OK!
+
+Criar um arquivo que contenha o nome e versão dos módulos instalados no ambiente virtual:
+  pip freeze > requirements.txt
+
+Instalar todos o módulos presentes no 'requirements.txt'
+  pip install -r requirements.txt
