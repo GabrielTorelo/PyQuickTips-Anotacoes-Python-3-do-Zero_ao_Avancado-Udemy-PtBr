@@ -39,3 +39,19 @@ Métodos mais usados:
         linhas = arquivo.readlines()
         for linha in linhas:
           print(linha, end='')
+
+Criando um arquivo JSON a partir de um dicionário:
+  1 - Importe o módulo 'json'.
+  2 - Use o 'with' para criar o arquivo (lembre-se de usar a extensão '.json').
+  3 - Use o 'dump' do módulo 'json' para copiar o dicionário em um arquivo JSON.
+    Exemplo: 
+      1 - Salvando um dicionário em um arquivo JSON:
+        json.dump(pessoa, arquivo)
+
+Lendo um arquivo JSON e salvando os dados em um dicionário:
+  1 - Importe o módulo 'json'.
+  2 - Use o 'with' para ler o arquivo (abrindo no modo de leitura).
+  3 - Use o 'load' do módulo 'json' para copiar os dados do arquivo JSON para um dicionário.
+    Exemplo: 
+      1 - Abrindo um arquivo JSON e salvando os dados em um dicionário:
+        pessoa = json.load(arquivo)

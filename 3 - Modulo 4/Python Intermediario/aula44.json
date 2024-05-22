@@ -1,0 +1,23 @@
+{
+  "nome": "Gabriel",
+  "sobrenome": "Torelo",
+  "enderecos": [
+    {
+      "rua": "Rua das Ruas",
+      "numero": 123
+    },
+    {
+      "rua": "Rua das Ruas",
+      "numero": 321
+    }
+  ],
+  "altura": 1.8,
+  "numeros_preferidos": [
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "dev": true
+}
