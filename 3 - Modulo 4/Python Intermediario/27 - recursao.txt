@@ -1,0 +1,14 @@
+Funções recursivas:
+  Conceito: São funções que chamam a si mesmas de maneira direta ou indireta, com o objetivo de resolver um problema dividido em partes menores.
+  Ou seja: É uma função que se auto-invoca, geralmente com parâmetros atualizados, até atingir uma condição de término.
+  ATENÇÃO: Cuidado para não gerar Loops Infinitos (quando um trecho de código não tem fim)!
+  Uso: Usadas em problemas que podem ser naturalmente divididos em subproblemas semelhantes.
+  Dica:
+    1 - Recursão pode ser menos eficiente em termos de tempo e espaço em comparação com soluções iterativas.
+    2 - Pode facilitar um problema complexos dividindo-o em partes menores e mais manejáveis.
+  Exemplo:
+    1 - Calculando o fatorial de um número:
+      def fatorial(n: int) -> int:
+        if n == 0:
+          return 1
+        return n * fatorial(n - 1)
