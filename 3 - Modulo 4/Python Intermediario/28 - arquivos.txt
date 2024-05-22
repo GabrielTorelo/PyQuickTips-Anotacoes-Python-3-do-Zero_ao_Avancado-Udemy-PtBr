@@ -1,0 +1,41 @@
+Manipulação de arquivos:
+  Conceito: Processo de leitura ou criação de um arquivo.
+  ATENÇÃO: Você deve garantir que os arquivos sejam fechados apropriadamente, evitando perdas de dados e corrupção de arquivos.
+  Uso: Gerar arquivos de texto, binários, logs, entre outros, para armazenar ou manipular dados de forma persistente.
+  Dica: SEMPRE USE UM BLOCO 'with' ao trabalhar com arquivos, pois, ele garante que o arquivo será fechado corretamente.
+
+Métodos mais usados:
+  * Escrita (writing):
+    Conceito: Processo de abertura do arquivo em modo de escrita ('w'), possibilitando a gravação de texto ou dados nele.
+    Exemplo:
+      1 - Escrevendo texto em um arquivo:
+        arquivo.write('Ola Mundo!\n')
+  * Leitura (read):
+    Conceito: Processo de abertura do arquivo em modo de leitura ('r'), possibilitando apenas a leitura dos dados.
+    Exemplo:
+      1 - Lendo todo o conteúdo de um arquivo:
+        print(arquivo.read())
+  * Fechamento (close):
+    Conceito: Fecha um arquivo após a leitura ou escrita, afim de evitar corrupção de dados.
+    Exemplo:
+      1 - Fechando um arquivo manualmente:
+        arquivo.close()
+  * Auto Fechamento (with):
+    Conceito: Usando o 'with' para abrir arquivos garante que eles sejam fechados automaticamente após a execução do bloco, mesmo que ocorram exceções.
+    Exemplo:
+      1 - Abrindo e fechando um arquivo automaticamente:
+        with open(caminho_arquivo, 'w') as arquivo:
+          arquivo.write('Ola Mundo!\n')
+  * Ler uma linha (readline):
+    Conceito: Ler uma linha de um arquivo por vez, útil para processar arquivos grandes linha a linha.
+    Exemplo:
+      1 - Lendo a primeira linha de um arquivo:
+        linha = arquivo.readline()
+        print(linha)
+  * Ler várias linhas (readlines):
+    Conceito: Ler todas as linhas de um arquivo e retorná-las como uma lista de strings.
+    Exemplo:
+      1 - Lendo todas as linhas de um arquivo:
+        linhas = arquivo.readlines()
+        for linha in linhas:
+          print(linha, end='')
