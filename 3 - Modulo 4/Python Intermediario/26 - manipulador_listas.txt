@@ -1,0 +1,31 @@
+Funções para manipulação de listas:
+  Conceito: Funções para manipulação de listas permitem aplicar operações ou transformações em listas, de forma eficiente e concisa.
+  Ou seja: É uma maneira de aplicar transformações ou operações a cada elemento de uma lista ou combinar elementos de uma lista de forma funcional.
+  Uso: Usadas para realizar operações como mapeamento de valores, filtragem de elementos com base em uma condição, redução de listas a um único valor, entre outras.
+
+Métodos nativos:
+  * Mapear (map):
+    Conceito: Aplica uma função a todos os itens de uma lista e retorna um mapa de resultados.
+    Ou seja: Envia cada item da lista para uma função e retorna um mapa de resultados após as operações da função.
+    Exemplo:
+      1 - Aumentar o preço de cada produto da lista em 5%:
+        print(list(map(lambda prod: round(prod * 1.05, 2), precos_produtos)))
+  * Filtrar (filter):
+    Conceito: Cria uma lista contendo apenas os elementos que satisfazem uma determinada condição.
+    Exemplo:
+      1 - Filtrando valores pares de uma lista:
+        print(list(filter(lambda prod: prod % 2 == 0, precos_produtos)))
+
+Métodos do módulo 'functools':
+  * Reduzir (reduce):
+    Conceito: Aplica uma função de forma cumulativa aos itens de uma lista, de forma que reduza a lista a um único valor.
+    Exemplo:
+      1 - Soma de todos os valores de uma lista
+        print(reduce(lambda atual, prox: round(atual + prox, 2), precos_produtos))
+  * Parcial (partial):
+    Conceito: Permite fixar um número de argumentos de uma função e gerar uma nova função.
+    Uso: Útil para criar versões específicas de uma função com alguns parâmetros pré-configurados.
+    Exemplo:
+      1 - Criando uma função parcial que sempre multiplica por 2
+        multiplicar_por_2 = partial(multiplicar, 2)
+        print(multiplicar_por_2(5))
