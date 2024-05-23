@@ -25,6 +25,17 @@ Entendendo o 'self':
           self.modelo = modelo
           self.ano = ano
 
+Entendendo o 'cls' (@classmethod):
+  Conceito: Refere-se a própria classe dentro dos métodos de classe.
+  Ou seja: Permite que você acesse atributos e métodos da classe, ao invés de atributos e métodos da instância.
+  Uso: Utilizado em métodos que precisam trabalhar com a própria classe.
+  Analogia: Assim como 'self' se refere à instância atual, 'cls' se refere à classe atual.
+  Exemplo:
+    1 - Criando método que retorne a quantidade de vezes que a classe foi instanciada:
+      @classmethod
+      def exibir_numero_de_pessoas(cls):
+        print(f"Número de pessoas criadas: {cls.numero_de_pessoas}")
+
 Método construtor (__init__):
   Conceito: O método construtor é um método especial que permite inicializar os atributos do objeto.
   Ou seja: Ele configura o estado inicial do objeto, definindo valores aos atributos.
@@ -36,3 +47,14 @@ Método construtor (__init__):
         def __init__(self, nome, idade):
           self.nome = nome
           self.idade = idade
+
+Método fábrica (factory):
+  Conceito: Método que retorna uma nova instância de uma classe.
+  Ou seja: Um método fábrica cria e retorna novos objetos, mas a forma como esses objetos são criados pode ser personalizada ou abstraída.
+  Uso: Usado para centralizar a lógica de criação de objetos, facilitando a manutenção e a extensão do código.
+  Analogia: Podemos fazer uma analogia a uma fabrica real, na qual dependendo das especificações fornecidas são criadas diferentes variações do mesmo produto.
+  Exemplo:
+    1 - Criando um método fábrica para criar de um carro específico:
+      @classmethod
+      def fabrica_corolla(cls, ano):
+        return cls("Toyota", "Corolla", ano)
