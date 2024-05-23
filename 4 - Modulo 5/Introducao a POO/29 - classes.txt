@@ -1,0 +1,38 @@
+Introdução a classes (class):
+  Conceito: São estruturas que permitem agrupar dados e funções que operam sobre esses dados em uma única entidade.
+  Ou seja: Elas servem como um molde para criar objetos, que são instâncias dessa classe.
+  Uso: Utilizadas para criar modelos e abstrações do mundo real, facilitando a organização e reutilização do código.
+  Analogia: Podemos fazer uma analogia a planta de uma casa ou prédio (definição de todas as características da construção).
+  Convenção: Por convenção, definimos os nomes das classes com PascalCase (iniciando cada palavra com letra maiúscula).
+  Escopo: O escopo é basicamente o mesmo que das funções.
+    Ou seja: Variáveis e métodos definindos dentro da classe, SÓ EXISTEM DENTRO DA CLASSE!
+  Exemplo:
+    1 - Criando uma classe 'Pessoa' que possui um método 'cumprimentar':
+      class Pessoa:
+        def cumprimentar():
+          print(f"Olá, seja muito bem-vindo")
+
+Entendendo o 'self':
+  Conceito: O self é uma referência à instância atual da classe, usado para acessar atributos e outros métodos da classe.
+  Ou seja: O self permite que você acesse e modifique os atributos da instância atual do objeto.
+  Uso: Utilizado em todos os métodos para referenciar a própria instância
+  Analogia: Podemos fazer uma analogia de como a instância da classe "se vê" e permite que os métodos interajam com os atributos da instância.
+  Exemplo:
+    1 - Criando uma classe 'Carro' que recebe uma instância:
+      class Carro:
+        def __init__(self, marca, modelo, ano):
+          self.marca = marca
+          self.modelo = modelo
+          self.ano = ano
+
+Método construtor (__init__):
+  Conceito: O método construtor é um método especial que permite inicializar os atributos do objeto.
+  Ou seja: Ele configura o estado inicial do objeto, definindo valores aos atributos.
+  Uso: Esse método é particularmente útil para definirmos parâmetros na criação de objetos.
+  Analogia: Podemos fazer uma analogia aos métodos construtores de qualquer outra linguagem (Java, JavaScript, entre outras - Praticamente a mesma coisa).
+  Exemplo:
+    1 - Criando uma classe 'Humano' que espera receber 2 parâmetros em seu construtor:
+      class Humano:
+        def __init__(self, nome, idade):
+          self.nome = nome
+          self.idade = idade
