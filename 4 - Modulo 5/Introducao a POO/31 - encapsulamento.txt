@@ -1,0 +1,28 @@
+O que é encapsulamento?
+  Resposta: Consiste na restrição de acesso direto aos dados de um objeto, ajudando a proteger os dados internos de uma classe e garantindo a integridade e consistência dos dados.
+  ATENÇÃO: Em Python o encapsulamento não ocorre de fato (não impede o acesso aos dados), porém, existe uma convenção na qual devemos seguir.
+
+Métodos de encapsulamento:
+  Público (public):
+    Conceito: Atributos e métodos públicos podem ser acessados de qualquer lugar, dentro ou fora da classe onde foram definidos.
+    Convenção: Não usamos nenhum underline para informarmos que algo é público.
+    Exemplo:
+      1 - Definindo um método público:
+        def exibir_informacoes_publicas(self):
+          print('Sou um método público')
+
+  Protegido (protected):
+    Conceito: Atributos e métodos protegidos só devem ser acessados dentro da classe onde foram definidos e em subclasses dessa classe.
+    Convenção: Usamos um underline ( _ ) para informarmos que algo é protegido.
+    Exemplo:
+      1 - Definindo um método protegido:
+        def _exibir_informacoes_protegidas(self):
+          print('Sou um método protegido')
+
+  Privado (private):
+    Conceito: 
+    Convenção: Usamos dois underlines ( __ ) para informarmos que algo é privado.
+    Exemplo: Atributos e métodos privados só podem ser acessados dentro da própria classe onde foram definidos.
+      1 - Definindo um método privado:
+        def _exibir_informacoes_privadas(self):
+          print('Sou um método privado')
