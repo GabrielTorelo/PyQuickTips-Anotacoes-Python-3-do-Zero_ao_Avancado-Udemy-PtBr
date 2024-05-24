@@ -1,0 +1,21 @@
+Introdução aos getters (@property):
+  Conceito: Getters são métodos em uma classe que permitem o acesso controlado e seguro aos atributos de uma instância.
+  Ou seja: Permite encapsular a lógica de acesso a um atributo, possibilitando a validação ou modificação dos dados antes de retorná-los.
+  ATENÇÃO: O método "get" é um método que se comporta como um atributo (decorador @property). 
+  Uso: Usado para proteger o acesso aos atributos de uma classe (não expondo diretamente os atributos), permitindo a validação e controle dos dados.
+  Exemplo:
+    1 - Criando um getter para retornar um atributo
+      @property
+      def get_cor(self):
+        return self._cor
+
+Introdução aos setters:
+  Conceito: Setters são métodos em uma classe que são usados para modificar de forma controlada e segura aos atributos de uma instância.
+  Ou seja: Permite o encapsulamento da lógica necessária para validar e definir novos valores para um atributo.
+  ATENÇÃO: O método "set" é um método que se comporta como um atributo (decorador @nome_getter.setter).
+  Uso: Usado para proteger e controlar a modificação dos atributos de uma classe, permitindo a validação e manipulação dos dados antes de armazená-los.
+  Exemplo:
+    1 - Criando um setter para atribuir um novo valor a um atributo
+      @get_cor.setter
+      def set_cor(self, nova_cor: str):
+        self._cor = nova_cor
