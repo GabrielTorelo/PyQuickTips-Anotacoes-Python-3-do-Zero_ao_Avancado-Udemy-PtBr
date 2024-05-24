@@ -1,0 +1,29 @@
+Relacionamentos entre classes:
+  Conceito: Refere-se à forma como diferentes classes interagem e se conectam entre si.
+  Ou seja: Os relacionamentos entre classes determinam a estrutura do código e como as classes trabalham juntas.
+
+Tipos de relacionamentos:
+  * Associação:
+    Conceito: Associação é um relacionamento entre duas classes que permite que uma instância de uma classe interaja com a instância de outra classe.
+    Ou seja: É uma relação de uso onde uma classe é apenas associada a outra.
+    Exemplo:
+      1 - Criando uma associação entre classes:
+        ferram1 = Ferramenta_Madeira('Serra')
+        Marceneiro('José').ferramenta = ferram1
+  * Agregação:
+    Conceito: Agregação é um relacionamento onde uma classe possui uma instância de outra classe, mas essa instância pode existir independentemente da classe que a contém.
+    Ou seja: É uma relação que implica posse parcial.
+    Exemplo:
+      1 - Criando uma associação de posse parcial entre classes:
+        prod = Produto('Celular', 1600)
+        car = Carrinho_compras(prod, 2)
+  * Composição:
+    Conceito: Composição é um relacionamento forte onde uma classe contém uma instância de outra classe e a vida útil da instância contida é dependente da classe que a contém.
+    Ou seja: Se a classe for destruída a instância contida também será destruída (posse total).
+    Exemplo:
+      1 - Criando uma associação de posse total entre classes:
+        def enderecos(self, enderecos: list[Endereco]):
+          ender = []
+          for end in enderecos:
+            ender.append(Endereco(end.get_rua, end.get_numero))
+          self._enderecos = ender
