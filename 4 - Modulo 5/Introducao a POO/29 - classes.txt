@@ -1,4 +1,4 @@
-Introdução a classes (class):
+Introdução as classes (class):
   Conceito: São estruturas que permitem agrupar dados e funções que operam sobre esses dados em uma única entidade.
   Ou seja: Elas servem como um molde para criar objetos, que são instâncias dessa classe.
   Uso: Utilizadas para criar modelos e abstrações do mundo real, facilitando a organização e reutilização do código.
@@ -58,3 +58,25 @@ Método fábrica (factory):
       @classmethod
       def fabrica_corolla(cls, ano):
         return cls("Toyota", "Corolla", ano)
+
+Método abstrato (abstractmethod):
+  Conceito: Um método abstrato é um método declarado em uma classe abstrata que não possui implementação.
+  Ou seja: Ele deve ser implementado em qualquer classe que herde da classe abstrata.
+  Decorador: O método abstrato é definido usando o decorador @abstractmethod, que é importado do módulo 'abc'.
+  Uso: Usado para definr uma assinatura que deve ser implementada por qualquer subclasse (classe filha).
+  Exemplo:
+    1 - Criando um método abstrato:
+        @abstractmethod
+        def falar_oi(self):
+          pass
+
+Classes abstratas (Abstract Base Classes):
+  Conceito: Classes abstratas (ABC), são classes que servem como contratos para a definição de novas classes. Elas podem forçar subclasses (classes filhas) a implementar métodos específicos.
+  Ou seja: Define uma interface que outras classes devem seguir, garantindo que determinadas funcionalidades sejam implementadas nas subclasses (classes filhas).
+  Analogia: Podemos fazer uma analogia a um contrato, no qual estabelece obrigações e diretrizes que devem ser seguidas.
+  Exemplo:
+    1 - Criando uma classe abstrata com um método abstrato:
+      class Pessoa(ABC):
+        @abstractmethod
+        def falar_oi(self):
+          pass
