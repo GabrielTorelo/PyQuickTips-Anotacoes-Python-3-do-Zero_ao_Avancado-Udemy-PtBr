@@ -27,3 +27,26 @@ Tipos de relacionamentos:
           for end in enderecos:
             ender.append(Endereco(end.get_rua, end.get_numero))
           self._enderecos = ender
+  * Herança:
+    Conceito: É um relacionamento onde uma classe (subclasse) herda atributos e métodos de outra classe (superclasse).
+    Ou seja: Permite criar novas classes com base em classes existentes, facilitando a reutilização de código.
+    Exemplo:
+      1 - Criando uma relação de herança entre 'Animal' e 'Cachorro':
+        class Cachorro(Animal):
+          def latir(self):
+            print(f"{self.get_nome} está latindo")
+    Acessando métodos da superclasse (classe mãe):
+      * Superior (super):
+        Conceito: O método 'super' é utilizado para chamar métodos da superclasse (classe mãe) dentro da subclasse (classe filha).
+        Ou seja: Permite que a subclasse (classe filha) chame métodos e inicializadores da sua superclasse (classe mãe).
+        Dica: O método 'super' recebe dois parâmetros, sendo a 'classe atual' e o primeiro argumento (self).
+          Logo: É possível especificar qual superclasse (classe mãe) estamos se referindo.
+        Exemplo:
+          1 - Acessando o método construtor da classe 'Animal' dentro da classe 'Cachorro' (aula54.py):
+            class Cachorro(Animal):
+              def __init__(self, nome: str):
+                super().__init__(nome)
+          2 - Acessando o método da classe 'A' dentro da classe 'C' (aula55.py):
+            class C(B):
+              def metodo(self):
+                return super(B, self).metodo()
