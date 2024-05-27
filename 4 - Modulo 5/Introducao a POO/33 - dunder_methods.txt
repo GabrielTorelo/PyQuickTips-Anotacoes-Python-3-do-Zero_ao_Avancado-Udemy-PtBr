@@ -1,0 +1,40 @@
+Introdução aos métodos especiais (dunder methods):
+  Conceito: Métodos especiais (dunder methods), são métodos predefinidos em Python que permitem a personalização de operações comuns em objetos.
+  Ou seja: Os 'dunder methods' permitem modificar a forma como objetos de uma classe se comportam com operadores e funções.
+  Exemplo:
+    1 - Imprimindo uma mensagem ao chamar uma instância:
+      def __str__(self):
+        return f"Sou mostrada ao chamar a instância"
+  Métodos mais usados:
+    * __init__:
+      Conceito: Método construtor que inicializa um objeto.
+      Ou seja: É chamado automaticamente quando uma nova instância da classe é criada.
+      Exemplo:
+        1 - Criando uma classe com um método construtor:
+          class Pessoa:
+            def __init__(self, nome, idade):
+              self.nome = nome
+              self.idade = idade
+    * __del__:
+      Conceito: Método destrutor que é chamado quando um objeto é destruído.
+      Ou seja: Permite fazer uma operação quando um objeto é excluído.
+      Exemplo:
+        1 - Imprimindo uma mensagem ao excluir uma instância:
+          def __del__(self):
+            print("A instância foi deletada")
+    * __str__:
+      Conceito: Define a representação de string legível do objeto.
+        !s: É um conversor usado em formatação de strings.
+      Exemplo:
+        1 - Imprimindo uma mensagem ao chamar uma instância:
+          def __str__(self):
+            return f"Sou mostrada ao chamar a instância"
+    * __repr__:
+      Conceito: Define a representação de string oficial do objeto.
+      Ou seja: Retorna uma string que pode ser usada para recriar o objeto (esqueleto do objeto).
+        !r:  Usado para converter um objeto em uma representação técnica.
+      Exemplo:
+        1 - Imprimindo um esqueleto de como deve ser instanciada a classe:
+          def __repr__(self):
+            class_name = type(self).__name__
+            return f"{class_name}(nome={self.nome!r}, idade={self.idade!r})"
