@@ -80,3 +80,14 @@ Classes abstratas (Abstract Base Classes):
         @abstractmethod
         def falar_oi(self):
           pass
+
+Polimorfismo:
+  Conceito: Polimorfismo é a capacidade de diferentes classes serem tratadas através da mesma interface.
+  Ou seja: Permite que objetos de diferentes tipos respondam a chamadas de métodos de maneira específica à sua classe.
+  Analogia: Podemos fazer uma analogia a um controle remoto que opera diferentes dispositivos. Embora diferentes, respondem aos mesmos comandos (métodos) de maneira adequada às suas funcionalidades (classes).
+  Exemplo:
+    1 - Criando uma função que chama um o método de diferentes instâncias da superclasse (classe mãe):
+      def sons(animal: Animal):
+        animal.emitir_som()
+      sons(gato)
+      sons(cachorro)
