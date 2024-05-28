@@ -15,6 +15,14 @@ Introdução aos métodos especiais (dunder methods):
             def __init__(self, nome, idade):
               self.nome = nome
               self.idade = idade
+    * __call__:
+      Conceito: É um método que permite que uma instância de classe seja chamada como uma função.
+      Ou seja: Quando implementada, você poderá chama-lá passando argumentos para ela.
+      Exemplo:
+        1 - Criando um método que poderá ser chamado como uma função:
+          class CallMe:
+            def __call__(self, nome):
+              print(nome, 'está chamando')
     * __del__:
       Conceito: Método destrutor que é chamado quando um objeto é destruído.
       Ou seja: Permite fazer uma operação quando um objeto é excluído.
