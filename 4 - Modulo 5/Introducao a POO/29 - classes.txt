@@ -110,3 +110,13 @@ Classes decoradoras:
       @Multiplicar(2)
       def soma(a: float, b: float):
         return a + b
+
+Metaclasses:
+  Conceito: Metaclasses são responsáveis pela criação das classes.
+  Ou seja: Enquanto uma classe define o comportamento de suas instâncias, uma metaclasses (metaclass) define o comportamento das classes.
+  Exemplo:
+    1 - Criando uma metaclasse e atribuindo ela a uma classe:
+      class Meta(type):
+        pass
+      class Pessoa(metaclass=Meta):
+        pass
