@@ -91,3 +91,13 @@ Polimorfismo:
         animal.emitir_som()
       sons(gato)
       sons(cachorro)
+
+Decoradores com classes:
+  Conceito: Decoradores com classes são funções que recebem uma classe como argumento e a modificam ou estendem seu comportamento de alguma forma.
+  Ou seja: Um decorador de classe pode adicionar, modificar ou substituir métodos e atributos de uma classe.
+  Exemplo:
+    1 - Adicionando um método personalizado em uma classe:
+      @adiciona_repr
+      class Time:
+          def __init__(self, nome):
+              self.nome = nome
