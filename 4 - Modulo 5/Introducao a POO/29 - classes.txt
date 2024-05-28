@@ -101,3 +101,12 @@ Decoradores com classes:
       class Time:
           def __init__(self, nome):
               self.nome = nome
+
+Classes decoradoras:
+  Conceito: As classes decoradoras são classes que atuam como decoradores, permitindo modificar ou estender o comportamento de funções ou métodos.
+  Ou seja: Uma classe decoradora implementa o método '__call__', permitindo que instâncias da classe sejam usadas como decoradores.
+  Exemplo:
+    1 - Decorando uma função com uma classe:
+      @Multiplicar(2)
+      def soma(a: float, b: float):
+        return a + b
