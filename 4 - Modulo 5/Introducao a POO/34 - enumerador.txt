@@ -1,0 +1,13 @@
+Introdução aos enumeradores (enum):
+  Conceito: São conjuntos de nomes simbólicos associados a valores únicos.
+  Ou seja: Ele permite criar um tipo de dado que cada membro da enumeração tem um valor associado.
+  ATENÇÃO: Os membros de um enumerador são imutáveis e únicos dentro do seu escopo.
+  Cuidado: Para usá-lo você deve importar o módulo 'enum'.
+  Uso: Usados para representar constantes de maneira mais legível e organizada, usando nomes simbólicos.
+  Exemplo:
+    1 - Criando um enumerador para representar direções:
+      class Direcoes(Enum):
+        DIREITA = auto()
+        ESQUERDA = auto()
+        CIMA = auto()
+        BAIXO = auto()
