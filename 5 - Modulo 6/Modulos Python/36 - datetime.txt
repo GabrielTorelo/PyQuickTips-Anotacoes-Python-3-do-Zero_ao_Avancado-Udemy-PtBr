@@ -1,0 +1,43 @@
+Introdução ao módulo datetime:
+  Conceito: O módulo datetime fornece classes para manipulação de datas e horas de forma eficiente e prática.
+  Uso: Utilizado para criar, manipular e formatar datas e horários, bem como realizar cálculos com datas.
+  Exemplos:
+    1 - Criando uma data com 'ano', 'mês' e 'dia':
+      print(datetime(2024, 5, 29))
+    2 - Criando uma data com 'ano', 'mês', 'dia', 'hora', 'minuto' e 'segundo':
+      print(datetime(2024, 5, 28, 13, 11, 5))
+    3 - Criando uma data e formatando ela:
+      print(datetime.strptime('2024-05-29 13:17:09', '%Y-%m-%d %H:%M:%S'))
+
+Trabalhando com timezones:
+  Conceito: O módulo 'pytz' permite que você converta e manipule datas e horas em diferentes regiões geográficas.
+  Uso: Utilizado para manipular datas e horas em diferentes fusos horários.
+  Exemplos:
+    1 - Criando uma data com o timezone atual:
+      print(datetime.now())
+    2 - Criando uma data com o timezone diferente do atual:
+      print(datetime.now(timezone('Asia/Karachi')))
+    3 - Passando informações de timezone para uma data:
+      print(datetime(2024, 5, 28, 13, 11, 5, tzinfo=timezone('America/Sao_Paulo')))
+
+Manipulando datas e horas:
+  Conceito: Manipulação de datas e horas envolve comparações, adição ou subtração de intervalos de tempo.
+  Uso: Utilizado para realizar operações como somar dias a uma data ou calcular a diferença entre duas datas.
+  Exemplos:
+    1 - Analisando se uma data é maior que outra:
+      print(d1.date() > d2.date())
+    2 - Analisando se um horário é maior que outro:
+      print(d1.time() > d2.time())
+    3 - Calculando a diferença entre datas e horários:
+      print(d2 - d1')
+    4 - Acrescentando 10 dias e 5 horas a uma data:
+      print(d1 + timedelta(days=10, hours=5))
+    5 - Acrescentando 60 segundos a um horário:
+      print((d2 + relativedelta(seconds=60)).time())
+
+Formatando datas:
+  Conceito: A formatação de datas envolve a conversão de uma data seguindo um formato específico.
+  Uso: Utilizado para exibir datas em um formato específico.
+  Exemplo:
+    1 - Formatando uma data com base em um específico:
+      print(data.strftime('%d/%m/%Y %H:%M:%S'))
