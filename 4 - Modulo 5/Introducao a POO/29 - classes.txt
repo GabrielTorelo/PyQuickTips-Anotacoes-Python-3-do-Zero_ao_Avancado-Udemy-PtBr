@@ -120,3 +120,17 @@ Metaclasses:
         pass
       class Pessoa(metaclass=Meta):
         pass
+
+Tuplas nomeadas (NamedTuple):
+  Conceito: Tuplas nomeadas são uma extensão das tuplas comuns que permitem atribuir nomes aos elementos.
+  Ou seja: Em vez de acessar os elementos da tupla por índices, você pode acessá-los por nomes.
+  Exemplo:
+    1 - Definindo uma tupla nomeada em uma classe:
+      class Funcionario(NamedTuple):
+        name: str = 'Sem Nome'
+        id: int = 0
+    2 - Definindo uma tupla nomeada em uma variável:
+      Carta = namedtuple(
+        'Carta', ['valor', 'naipe'],
+        defaults=['VALOR', 'NAIPE']
+      )
