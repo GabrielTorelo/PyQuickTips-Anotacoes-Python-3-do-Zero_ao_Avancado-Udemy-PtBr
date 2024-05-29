@@ -1,0 +1,59 @@
+Introdução as dataclasses (dataclass):
+  Conceito: É uma forma simplificada de criar de classes que armazenam atributos e possuem métodos simples.
+  Ou seja: Seu foco é na redução da quantidade de código necessário para criar classes.
+  Decorador: Para sua definição é usado o decorador '@dataclass'.
+  Exemplo:
+    1 - Criando uma 'dataclass' para representar uma pessoa:
+      @dataclass
+      class Pessoa:
+        nome: str
+        idade: int
+  Parâmetros mais usados:
+    * Congelado (frozen):
+      Conceito: Usando o parâmetro 'frozen=True' você torna as instâncias da 'dataclass' imutáveis.
+      Ou seja: Os atributos não podem ser alterados após a criação da instância, oferecendo segurança contra modificações.
+      Exemplo:
+        1 - Criando uma 'dataclass' imutável:
+          @dataclass(frozen=True)
+          class PontoImutavel:
+            x: int
+            y: int
+    * Ordem (order):
+      Conceito: Usando o parâmetro 'order=True' permite que instâncias sejam comparadas com base na ordem dos atributos.
+      Ou seja: Gera métodos de comparação (<, <=, >, >=) automaticamente para a classe.
+      Exemplo:
+        1 - Criando uma 'dataclass' com ordenação:
+          @dataclass(order=True)
+          class PontoOrdenado:
+            x: int
+            y: int
+    * Igual (eq):
+      Conceito: Usando o parâmetro 'eq=False' você desativa a geração automática do método '__eq__', que é usado para comparar a igualdade das instâncias.
+      Ou seja: Com o parâmetro 'eq=False', a dataclasse não fornecerá um método '__eq__' para verificar se duas instâncias são iguais.
+      Exemplo:
+        1 - Criando uma 'dataclass' sem método de igualdade:
+          @dataclass(eq=False)
+          class PontoSemIgual:
+            x: int
+            y: int
+  Funções mais usadas:
+    * Como dicionário (asdict):
+      Conceito: É utilizada para converter uma instância de uma 'dataclass' em um dicionário.
+      Ou seja: Transforma todos os atributos da 'dataclass' em pares chave-valor dentro de um dicionário.
+      Exemplo:
+        1 - Convertendo uma instância em um dicionário:
+          print(asdict(pessoa))
+    * Como tupla (astuple):
+      Conceito: É utilizada para converter uma instância de uma 'dataclass' em uma tupla.
+      Ou seja: Transforma todos os atributos da 'dataclass' em uma tupla, mantendo a ordem dos atributos.
+      Exemplo:
+        1 - Convertendo uma instância em uma tupla:
+          print(astuple(pessoa))
+    * Campo (field):
+      Conceito: É utilizado para personalizar os atributos de uma 'dataclass'.
+      Ou seja: Permite configurar metadados dos atributos, como valores padrões, funções de inicialização, validação e outras funcionalidades.
+      Exemplo:
+        1 - Usando o 'field' para definir valor padrão:
+          @dataclass
+          class CestaDeFrutas:
+            frutas: List[str] = field(default_factory=list)
