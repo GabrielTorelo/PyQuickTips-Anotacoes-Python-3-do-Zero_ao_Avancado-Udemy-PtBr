@@ -1,0 +1,30 @@
+Introdução ao módulo 'os':
+  Conceito: O módulo 'os' fornece uma maneira de usar funcionalidades dependentes do sistema operacional.
+  Ou seja: Possibilita rodar comandos do sistema operacional e executar ações, como manipular arquivos, limpar o terminal, entre outros.
+  Uso: Usado para interagir com o sistema operacional de maneira fácil e portátil.
+  Exemplo:
+    1 - Limpando a terminar:
+      system('clear')
+
+Trabalhando com caminhos:
+  Conceito: Possibilita manipular caminhos de arquivos e diretórios de forma dinâmica, garantindo compatibilidade entre diferentes sistemas operacionais.
+  Uso: Usado para manipular caminhos e diretórios de forma dinâmica em sistemas operacionais.
+  Exemplos:
+    1 - Criando um caminho para um arquivo:
+      print(path.join('Users', 'USER', 'Downloads', 'arquivo.txt'))
+    2 - Capturando o caminho e o nome de um arquivo:
+      print('\nCaminho + Arquivo:', path.split('Users\\USER\\Downloads\\arquivo.txt'))
+    3 - Verificando se um arquivo existe:
+      print('\nO arquivo existe?', path.exists('Users\\USER\\Downloads\\arquivo.txt'))
+    4 - Verificando a extensão do arquivo
+      print('\nExtensão do arquivo:', path.splitext('Users\\USER\\Downloads\\arquivo.txt')[1])
+    5 - Listando todos os arquivos e diretórios de um caminho:
+      print(listdir('Users\\USER\\Downloads'))
+    6 - Lista recursivamente todos os arquivos e diretórios de um caminho:
+      print(list(walk('Users\\USER\\Downloads')))
+    7 - Verificando se um caminho específico é um diretório:
+      print(path.isdir('Users\\USER\\Downloads'))
+    8 - Removendo um arquivo ou diretório:
+      unlink('Users\\USER\\Downloads\\arquivo.txt')
+
+
