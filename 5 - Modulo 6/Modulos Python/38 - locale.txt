@@ -1,0 +1,22 @@
+Introdução ao módulo 'locale':
+  Conceito: O módulo locale permite a internacionalização dos seus projetos, lidando com dados específicos de uma localidade.
+  Uso: Usado para ajustar as configurações de localização, permitindo que o programa exiba e manipule dados regionais do usuário.
+  Exemplos:
+    1 - Atualizando a localização para português do Brasil:
+      setlocale(LC_ALL, "pt_BR.UTF-8")
+    2 - Obtendo a localização atual:
+      print("Localização atual:", getlocale())
+
+Formatação numérica:
+  Conceito: Permite realizar a formatação de números de acordo com a localização.
+  Ou seja: Usado para apresentar números em um formato familiar ao usuário, de acordo com sua localização.
+  Exemplos:
+    1 - Formatando números de acordo com a localização:
+      print("Número formatado:", format_string('%0.2f', 123456.7809, grouping=True))
+
+Formatação de datas:
+  Conceito: Permite realizar a formatação de datas de acordo com a localização.
+  Ou seja: Usado para traduzir datas de acordo com a localização do usuário.
+  Exemplos:
+    1 - Formatando datas em um formato específico:
+      print("Data formatada:", datetime.now().strftime('%A, %d de %B de %Y'))
