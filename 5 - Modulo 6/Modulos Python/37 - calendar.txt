@@ -1,0 +1,12 @@
+Introdução ao módulo 'calendar':
+  Conceito: O módulo calendar fornece funções relacionadas a calendários, permitindo a manipulação e visualização dos mesmos.
+  Uso: Utilizado para criar calendários, determinar dias da semana, contar dias específicos em um mês e obter informações detalhadas sobre datas.
+  Exemplos:
+    1 - Imprime a quantidade de sextas-feiras em um mês:
+      print(month(2024, 5).count(str(FRIDAY)))
+    2 - Imprime o último dia do mês:
+      print(monthrange(2024, 5)[1])
+    3 - Imprime o dia da semana de uma data específica:
+      print(day_name[weekday(2024, 5, 1)])
+    4 - Verifica se um ano é bissexto:
+      print(isleap(2024))
