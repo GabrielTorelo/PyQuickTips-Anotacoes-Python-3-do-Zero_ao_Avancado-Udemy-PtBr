@@ -1,0 +1,23 @@
+Introdução ao módulo 'json':
+  Conceito: O módulo json fornece funções para trabalhar com dados no formato JSON (formato leve de intercâmbio de dados).
+  Ou seja: Permite converter dados para o formato JSON, facilitando a serialização e desserialização dos dados. 
+  Uso: Usado para ler, escrever, analisar e gerar dados JSON.
+  Exemplos:
+    1 - Convertendo um dicionário Python para uma string JSON:
+      print(json.dumps({"nome": "João"}))
+    2 - Convertendo uma string JSON para um dicionário Python:
+      print(json.loads(""" { "nome": "João" } """))
+    3 - Convertendo um dicionário Python para um arquivo JSON:
+      dump(dicionario, arquivo, ensure_ascii=False, indent=2)
+    4 - Convertendo um arquivo JSON em um dicionário Python:
+      load(arquivo)
+
+Tabela de converção:
+--- Python --- ⇋ --- JSON ---
+dict           ⇋    object
+list, tuple    ⇋    array
+str            ⇋    string
+int, float     ⇋    number
+True           ⇋    true
+False          ⇋    false
+None           ⇋    null
