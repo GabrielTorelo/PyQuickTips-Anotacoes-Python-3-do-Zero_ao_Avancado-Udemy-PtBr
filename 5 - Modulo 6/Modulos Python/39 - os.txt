@@ -27,4 +27,17 @@ Trabalhando com caminhos:
     8 - Removendo um arquivo ou diretório:
       unlink('Users\\USER\\Downloads\\arquivo.txt')
 
-
+Manipulando arquivos:
+  Conceito: Operações que podem ser realizadas em arquivos e diretórios.
+  Uso: Utilizado para mover, copiar e apagar arquivos ou diretórios.
+  Exemplos:
+    1 - Movendo um arquivo para um diretório diferente (shutil.move):
+      shutil.move('Users\\USER\\Desktop\\arquivo_mover.txt', 'Users\\USER\\Documents')
+    2 - Copiando um arquivo para um diretório (shutil.copy):
+      shutil.copy('Users\\USER\\Desktop\\arquivo_copiar.txt', 'Users\\USER\\Downloads')
+    3 - Copiando um diretório recursivamente (shutil.rmtree):
+      shutil.copytree('Users\\USER\\Desktop\\diretorio_copiar', 'Users\\USER\\Downloads\\diretorio_copiado')
+    4 - Apagando um arquivo de um diretório (unlink):
+      unlink('Users\\USER\\Downloads\\arquivo_apagar.txt')
+    5 - Apagando um diretório recursivamente (shutil.rmtree):
+      shutil.rmtree('Users\\USER\\Downloads\\diretorio_apagar')
