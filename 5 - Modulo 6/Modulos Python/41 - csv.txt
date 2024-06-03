@@ -1,0 +1,12 @@
+Introdução ao módulo 'csv':
+  Conceito: O módulo csv fornece funcionalidades para a leitura e escrita de arquivos CSV (Comma Separated Values).
+  Ou seja: Permite manipular arquivos CSV, facilitando a importação e exportação de dados em formato de planilha.
+  Uso: Usado para ler e escrever dados em arquivos CSV de forma eficiente e estruturada.
+  Exemplos:
+    1 - Lendo um arquivo CSV:
+      csv.reader(arquivo)
+    2 - Lendo um arquivo CSV em formato de dicionário:
+      csv.DictReader(arquivo)
+    3 - Escrevendo em um arquivo CSV:
+      escritor = csv.writer(arquivo)
+      escritor.writerows([['Nome', 'Idade', 'Cidade'], ['João', 30, 'São Paulo']])
