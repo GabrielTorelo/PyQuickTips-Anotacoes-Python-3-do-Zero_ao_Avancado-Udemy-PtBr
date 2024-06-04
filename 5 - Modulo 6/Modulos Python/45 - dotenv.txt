@@ -1,0 +1,8 @@
+Introdução ao módulo 'dotenv':
+  Conceito: O módulo dotenv permite que você carregue variáveis de ambiente em seu projeto.
+  Uso: Utilizado para gerenciar as variáveis de ambiente do projeto.
+  Exemplos:
+    1 - Carregando e deixando disponível todas as variáveis de ambiente do arquivo .env:
+      load_dotenv()
+    2 - Carregando todas as variáveis de ambiente em um dicionário:
+      print(dotenv_values())
