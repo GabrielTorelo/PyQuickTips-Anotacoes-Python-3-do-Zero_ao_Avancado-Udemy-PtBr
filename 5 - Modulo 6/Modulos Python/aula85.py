@@ -3,7 +3,7 @@ from datetime import datetime
 from calendar import calendar
 
 # Importa o módulo locale (usado para manipular configurações regionais)
-from locale import getlocale, setlocale, LC_ALL, format_string
+from locale import getlocale, setlocale, LC_ALL, format_string, currency
 
 # Definindo constantes
 NUMERO = 123456.7809
@@ -32,3 +32,13 @@ print('\n')
 str_data = '%A, %d de %B de %Y' # Formato da data que será exibido
 data_formatada = DATA_HOJE.strftime(str_data) # Formata a data
 print(data_formatada)
+
+print('\n')
+
+# Define um valor em dólar
+valor_usd = 16078.698
+
+# Formata o valor em real
+valor_brl = currency(val=valor_usd, symbol=True, grouping=True)
+
+print('Valor formatado:', valor_brl)

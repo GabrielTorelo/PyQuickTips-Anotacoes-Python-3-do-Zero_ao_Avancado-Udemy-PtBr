@@ -10,13 +10,20 @@ Introdução ao módulo 'locale':
 Formatação numérica:
   Conceito: Permite realizar a formatação de números de acordo com a localização.
   Ou seja: Usado para apresentar números em um formato familiar ao usuário, de acordo com sua localização.
-  Exemplos:
+  Exemplo:
     1 - Formatando números de acordo com a localização:
       print("Número formatado:", format_string('%0.2f', 123456.7809, grouping=True))
 
 Formatação de datas:
   Conceito: Permite realizar a formatação de datas de acordo com a localização.
   Ou seja: Usado para traduzir datas de acordo com a localização do usuário.
-  Exemplos:
+  Exemplo:
     1 - Formatando datas em um formato específico:
       print("Data formatada:", datetime.now().strftime('%A, %d de %B de %Y'))
+
+Formatação de moedas:
+  Conceito: Permite realizar a formatação de moedas de acordo com a localização.
+  Ou seja: Usado para formatar valores monetários de acordo com o padrão utilizado na localização do usuário.
+  Exemplo:
+    1 - Formatando um valor para real:
+      print(currency(val=16078.698, symbol=True, grouping=True))
