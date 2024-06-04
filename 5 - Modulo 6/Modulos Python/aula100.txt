@@ -1,0 +1,6 @@
+Olá $convidado_nome, tudo bem?
+Venha celebrar conosco os $empresa_anos da $empresa_nome!
+Data: $evento_data, das $evento_inicio às $evento_fim, na $evento_endereco.
+A entrada é $evento_valor e respondendo a esta mensagem você ganha um brinde ($evento_brinde) do evento.
+
+Atenciosamente, $empresa_nome.

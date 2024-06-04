@@ -1,0 +1,13 @@
+Introdução ao módulo 'string':
+  Conceito: O módulo string contém várias funções e constantes para manipular e processar strings.
+  Uso: Utilizado para realizar operações complexas em strings, como substituir partes de uma string, formatar uma string, entre outras.
+  Exemplos:
+    1 - Criando um Template e substituindo a variável por texto:
+      template = Template(""" Olá $nome """)
+      print(template.substitute({ 'nome': 'Gabriel' }))
+    2 - Obtendo todas as letras do alfabeto em maiúsculas e minúsculas:
+      print(ascii_letters)
+    3 - Obtendo todos os dígitos de 0 a 9:
+      print(digits)
+    4 - Obtendo todos os caracteres de pontuação:
+      print(punctuation)
