@@ -1,0 +1,20 @@
+Introdução ao módulo 'random':
+  Conceito: O módulo random é utilizado para gerar números pseudoaleatórios e realizar operações.
+  Ou seja: Permite criar elementos aleatórios de maneira controlada, utilizando diversas funções prontas.
+  ATENÇÃO: É um gerador de números pseudoaleatórios, ou seja, os números parecem ser aleatórios, mas podem ser reproduzidos se a semente geradora for conhecida.
+  Uso: Usado quando se necessita de pseudoaleatoriedade em um sistema, como para gerar números, selecionar itens, embaralhar sequências, entre outras aplicações.
+  Exemplos:
+    1 - Gerando um número pseudoaleatório inteiro entre 1 e 10:
+      print(randint(1, 10))
+    2 - Gerando um número pseudoaleatório inteiro entre 2 e 10, pulando de 2 em 2:
+      print(randrange(2, 10, 2))
+    3 - Escolhendo 1 fruta 'aleatoriamente' em uma lista:
+      print(choice(['maçã', 'banana', 'cereja']))
+    4 - Escolhendo 2 nomes 'aleatoriamente' em uma lista:
+      print(sample(['Ana', 'João', 'Maria'], 2))
+    5 - Embaralhando uma lista:
+      print(shuffle([1, 2, 3, 4, 5]))
+    6 - Gerando um número pseudoaleatório de ponto flutuante entre 0 e 1:
+      print(random())
+    7 - Gerando um número pseudoaleatório de ponto flutuante entre 1 e 10:
+      print(uniform(1, 10))
