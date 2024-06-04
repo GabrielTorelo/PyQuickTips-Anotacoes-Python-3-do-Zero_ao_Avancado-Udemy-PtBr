@@ -10,3 +10,7 @@ Introdução ao módulo 'csv':
     3 - Escrevendo em um arquivo CSV:
       escritor = csv.writer(arquivo)
       escritor.writerows([['Nome', 'Idade', 'Cidade'], ['João', 30, 'São Paulo']])
+    4 - Escrevendo em um arquivo CSV com dados em formato de dicionário:
+      escritor = DictWriter(arquivo, fieldnames=['Nome', 'Idade', 'Cidade'])
+      escritor.writeheader()
+      escritor.writerows([{'Nome': 'Paulo', 'Idade': 27, 'Cidade': 'São Caetano do Sul'}])
