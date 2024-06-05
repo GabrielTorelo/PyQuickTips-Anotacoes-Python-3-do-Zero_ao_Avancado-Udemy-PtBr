@@ -1,0 +1,10 @@
+Introdução ao módulo 'bs4':
+  Conceito: O módulo bs4 temo como foco extrair dados de arquivos HTML e XML.
+  Ou seja: Cria uma árvore de análise a partir da página fonte do site, usada para extrair dados de maneira simples e intuitiva.
+  Uso: Usado para web scraping, permitindo navegar pela estrutura de um documento HTML ou XML e buscar, modificar ou extrair dados específicos.
+  Exemplos:
+    1 - Extraindo o título de uma página HTML:
+      print(BeautifulSoup(get('https://www.SITE_QUALQUER.com.br').text, 'html.parser').title.text)
+    2 - Buscando um elemento de uma classe específica:
+      html = BeautifulSoup(get('https://www.SITE_QUALQUER.com.br').text, 'html.parser')
+      print(html.select_one('html > body > div > div > nobr > b').text) 
