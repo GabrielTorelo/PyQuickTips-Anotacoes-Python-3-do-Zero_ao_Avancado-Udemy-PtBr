@@ -1,0 +1,15 @@
+Introdução ao módulo 'requests':
+  Conceito: O módulo requests possibilita a realização de solicitações HTTP.
+  Ou seja: Ele permite que você envie requisições HTTP para servidores e receba respostas.
+  Uso: Usado para se comunicar com servidores WEB (APIs ou websites), realizando requisições do tipo GET, POST, PUT e DELETE.
+  Exemplo:
+    1 - Realizando uma solicitação do tipo GET:
+      print(get('https://www.SITE_QUALQUER.com.br').status_code)
+
+Rodando um servidor WEB com Python (Módulo: http.server):
+  Conceito: Permite rodar um servidor HTTP simples diretamente do terminal.
+  Uso: Usado para hospedar arquivos estáticos e servir conteúdo web localmente
+  Comando: python -m http.server -d NOME_PASTA_INDEX 3000
+    '-m http.server': Indica que estamos usando o módulo "http.server".
+    '-d NOME_PASTA_INDEX': Indica qual o diretório que contém o "index.html".
+    '3000': Indica em qual porta o servidor irá rodar.
