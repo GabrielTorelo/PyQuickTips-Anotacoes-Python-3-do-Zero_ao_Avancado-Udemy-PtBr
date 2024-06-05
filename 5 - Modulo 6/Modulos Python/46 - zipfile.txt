@@ -1,0 +1,13 @@
+Introdução ao módulo 'zipfile':
+  Conceito: O módulo zipfile permite a leitura, escrita e extração de arquivos compactados no formato ZIP.
+  Uso: Usado para comprimir ou descompactar arquivos ZIP, facilitando a manipulação de múltiplos arquivos.
+  Exemplos:
+    1 - Criando um arquivo zipado:
+      with ZipFile('aula103.zip', 'w') as arquivo_zip:
+        arquivo_zip.write('Teste arquivo', 'arquivo_1.txt')
+    2 - Listando todos os arquivos de um arquivo zipado:
+      with ZipFile('aula103.zip', 'r') as arquivo_zip:
+        print('Arquivos do arquivo zip:', arquivo_zip.namelist())
+    3 - Extraindo todos os arquivos de um arquivo zipado:
+      with ZipFile('aula103.zip', 'r') as arquivo_zip:
+        arquivo_zip.extractall('arquivos_extraidos')
