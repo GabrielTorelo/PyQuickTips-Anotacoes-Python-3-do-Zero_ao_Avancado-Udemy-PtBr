@@ -1,0 +1,22 @@
+Introdução ao módulo 'selenium':
+  Conceito: O módulo selenium é uma ferramenta para automatizar navegadores e programar interações com páginas WEB.
+  Ou seja: Com selenium, você simula um usuário interagindo com um navegador. 
+  Uso: Usado principalmente para testes automatizados em aplicações WEB e para realizar WEB scraping de forma dinâmica.
+  Exemplos:
+    1 - Criando e configurando o webdriver:
+      chrome_browser = webdriver.Chrome(
+        service=Service(executable_path='chromedriver/chromedriver.exe'),
+        options=webdriver.ChromeOptions()
+      )
+    2 - Abrindo uma página da web e imprimindo o título:
+      chrome_browser.get('https://www.SITE_QUALQUER.com.br')
+      print(chrome_browser.title)
+    3 - Preenchendo um formulário e submetendo:
+      usuario = chrome_browser.find_element_by_name('nome')
+      usuario.send_keys('Gabriel')
+      usuario.send_keys(Keys.ENTER)
+    4 - Clicando em um botão:
+      botao = chrome_browser.find_element_by_id('enviar')
+      botao.click()
+    5 - Extraindo texto de um elemento específico:
+      print(driver.find_element_by_id('info_texto').text)
