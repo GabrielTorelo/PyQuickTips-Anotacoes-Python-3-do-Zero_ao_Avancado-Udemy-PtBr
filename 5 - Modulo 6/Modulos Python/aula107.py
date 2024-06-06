@@ -1,5 +1,7 @@
 # Importa o módulo subprocess (usado para executar comandos do sistema operacional)
 from subprocess import run, Popen
+
+# Importa o módulo sys (usado para obter informações do sistema operacional)
 from sys import platform
 
 # Imprime o sistema operacional
