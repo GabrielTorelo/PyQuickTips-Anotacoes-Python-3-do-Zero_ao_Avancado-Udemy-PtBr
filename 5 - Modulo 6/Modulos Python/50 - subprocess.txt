@@ -1,0 +1,13 @@
+Introdução ao módulo 'subprocess':
+  Conceito: O módulo subprocess permite a execução de novos processos, interação com dados de entrada, saída e a obtenção de retornos.
+  Ou seja: É uma forma de executar comandos do sistema operacional e capturar suas saídas a partir de um script.
+  Uso: Usado para executar comandos shell, scripts e outros programas diretamente via script, facilitando a automação de tarefas e integração com outros sistemas.
+  Exemplos:
+    1 - Executando um comando e capturando a saída:
+      print(f'Saída: ', run(['dir'], capture_output=True, text=True).stdout)
+    2 - Executando um comando e capturando os argumentos:
+      print(f'Argumentos: ', run(['dir /s/w/o/p'], capture_output=True, text=True, shell=True).args)
+    3 - Verificando o código de retorno de um comando:
+      print(f'retorno: ', run(['false']).returncode)
+    4 - Executando um comando em segundo plano:
+      Popen('ipconfig', shell=True, text=True, encoding='cp850')
