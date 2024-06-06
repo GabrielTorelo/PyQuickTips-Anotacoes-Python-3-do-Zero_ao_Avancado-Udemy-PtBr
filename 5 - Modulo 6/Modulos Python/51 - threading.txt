@@ -1,0 +1,25 @@
+Introdução ao módulo 'threading':
+  Conceito: O módulo threading permite a criação e controle de threads, possibilitando a execução de várias operações simultaneamente dentro de um mesmo processo.
+  Ou seja: Permite a execução de tarefas em paralelo, utilizando múltiplas threads para melhorar a eficiência e o desempenho de programas.
+  Uso: Usado para executar funções em segundo plano, melhorar a responsividade de aplicações e realizar operações simultâneas sem bloquear o fluxo principal do programa.
+  Exemplos:
+    1 - Usando uma classe para definir uma thread:
+      class SubThread(Thread):
+        def run(self):
+          print("Thread está em execução")
+    2 - Criando uma thread a partir de uma classe:
+      t1 = SubThread(texto='Thread 1', tempo=10)
+    3 - Criando uma thread diretamente:
+      t2 = Thread(target=SUA_FUNCAO, args=('ARG_1', 'ARG_2'))
+    4 - Iniciando uma thread:
+      t1.start()
+    5 - Iniciando múltiplas threads:
+      t1.start()
+      t2.start()
+    6 - Realizando um 'loop' enquanto uma thread estiver ativa:
+      while t2.is_alive():
+        print('A thread 2 está ativa...')
+    7 - Bloqueando uma thread:
+      Lock().acquire()
+    8 - Liberando uma thread:
+      Lock().release()
