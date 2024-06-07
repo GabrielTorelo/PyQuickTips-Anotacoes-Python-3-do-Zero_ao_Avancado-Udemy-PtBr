@@ -1,0 +1,23 @@
+Introdução ao módulo 'openpyxl':
+  Conceito: O módulo openpyxl possibilita ler e escrever arquivos de planilhas (xlsx, xlsm, xltx e xltm).
+  Ou seja: Permite a manipulação de planilhas diretamente através de scripts, incluindo a criação, modificação e leitura de dados.
+  Uso: Utilizado para automação de tarefas relacionadas a planilhas, como geração de relatórios, análise e exportação/importação de dados.
+  Exemplos:
+    1 - Criando uma nova planilha:
+      wb = Workbook()
+    2 - Lendo dados de uma planilha existente:
+      load_wb = load_workbook('aula115.xlsx')
+    3 - Ativando uma folha da planilha (necessário para o uso):
+      ws = wb.active
+    4 - Renomeando uma folha da planilha:
+      wb.active.title = 'Notas da Turma'
+    5 - Adicionando valor em uma células:
+      ws['A1'] = 'Olá Mundo!'
+    6 - Salvando uma planilha:
+      wb.save('aula117.xlsx')
+    7 - Criando estilo para célula:
+      celula_vermelha = PatternFill(start_color="FF0000", fill_type = "solid")
+      fonte_branca = Font(color='FFFFFF')
+    8 - Aplicando estilos em uma célula:
+      load_ws['A1'].font = font_branca
+      load_ws['A1'].fill = celula_vermelha
