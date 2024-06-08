@@ -1,0 +1,81 @@
+Introdução a base de dados SQLite:
+  Conceito: O SQLite implementa um banco de dados SQL embutido, que não requer um servidor separado para sua operação.
+  Ou seja: É um sistema de gerenciamento de banco de dados relacional extremamente leve, que pode ser integrado diretamente em aplicações.
+  Uso: Utilizado para armazenar e gerenciar dados em aplicações que requerem um banco de dados simples e eficiente sem a necessidade de um servidor de banco de dados completo.
+  Exemplos:
+    1 - Criando uma conexão com o banco de dados:
+      conexao = connect("banco_de_dados.sqlite3")
+    2 - Criando um cursor para manipulação do banco de dados:
+      cursor = conexao.cursor()
+    3 - Executando um comando SQL:
+      cursor.execute("ALTER TABLE tipo_produto ADD peso REAL;")
+    4 - Executando várias vezes o mesmo comando SQL:
+      cursor.executemany("UPDATE tipo_produto set peso = ? WHERE idTipo_produto = ?;", [(2360, 1)])
+    5 - Salvando as mudanças no banco de dados:
+      conexao.commit()
+    6 - Buscando vários dados no banco de dados:
+      consulta_produtos = cursor.execute("SELECT * FROM produto;").fetchall()
+    7 - Buscando um dado no banco de dados:
+      consulta_produto = cursor.execute("SELECT nome, MAX(preco) FROM produto;").fetchone()
+    8 - Fechando um cursor (parando a manipulação dos dados):
+      cursor.close()
+    9 - Fechando uma conexão com o banco de dados:
+      conexao.close()
+
+Exemplos de comandos SQLite para manipulação do banco de dados:
+  1 - Criação de tabela:
+    * Criando a tabela 'produto':
+      CREATE TABLE "produto" (
+        "idProduto"	INTEGER NOT NULL,
+        "nome"	TEXT NOT NULL,
+        "preco"	REAL NOT NULL,
+        PRIMARY KEY("idProduto" AUTOINCREMENT)
+      );
+  2 - Inserção de dados em tabela:
+    * Inserindo dados na tabela 'produto':
+      INSERT INTO produto (nome, preco)
+        VALUES ('Notebook Positivo', 1750.00);
+  3 - Consulta de dados em tabela:
+    * Consultando todos os produtos:
+      SELECT * FROM produto;
+    * Consultando produtos com 'preco' maior que R$ 1.000,00
+      SELECT * FROM produto WHERE preco > 1000;
+  4 - Atualização de dados e tabela:
+    * Atualizando dados na tabela 'produto':
+      UPDATE produto set nome = 'Notebook', preco = '2800' WHERE idProduto = 2;
+  5 - Remoção de dados em tabela:
+    * Removendo dado específico da tabela 'produto':
+      DELETE FROM produto WHERE idProduto = 1;
+  6 - Funções de agregação:
+    * Consultando o produto com maior valor:
+      SELECT nome, MAX(preco) FROM produto;
+    * Consultando o produto com menor valor:
+      SELECT nome, MIN(preco) FROM produto;
+    * Consultando a soma de todos os produtos:
+      SELECT SUM(preco) FROM produto;
+    * Calculando a média aritmética dos produtos e arredondando o valor com duas casas decimais:
+      SELECT ROUND(AVG(preco), 2) FROM produto;
+  7 - Funções de agrupamento e ordenação:
+    * Ordenando os preços dos produtos do mais barato para o mais caro:
+      SELECT nome, preco FROM produto ORDER BY preco ASC;
+    * Ordenando os preços dos produtos do mais caro para o mais barato:
+      SELECT nome, preco FROM produto ORDER BY preco DESC;
+  8 - Funções de data e hora:
+    * Consultando data e hora atual:
+      SELECT datetime();
+    * Formatando data e hora no formato do Brasil:
+      SELECT strftime('%d/%m/%Y - %H:%M:%S');
+    * Consultando a data e hora local:
+      SELECT datetime('now', 'localtime');
+
+-----------------------------------------------
+------------- Tabela de converção -------------
+-------- SQL ------- ⇋ ------- SQLite --------
+-----------------------------------------------
+         INT         ⇋        INTEGER
+       VARCHAR       ⇋          TEXT
+       DECIMAL       ⇋          REAL
+    AUTO_INCREMENT   ⇋      AUTOINCREMENT
+-----------------------------------------------
+-----------------------------------------------
+-----------------------------------------------
